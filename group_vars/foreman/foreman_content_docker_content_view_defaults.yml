@@ -1,0 +1,1385 @@
+---
+
+#######################################
+### CONTENT VIEW DEFAULTS
+#######################################
+
+# foreman_cv_allow_promote: false
+# foreman_ccv_allow_promote: true
+# foreman_ccv_auto_publish: true
+
+
+### ATIX
+
+# foreman_cv_allow_promote_atix: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_atix_debian: "{{ foreman_cv_allow_promote_atix | bool }}"
+# foreman_cv_allow_promote_atix_debian11: "{{ foreman_cv_allow_promote_atix_debian | bool }}"
+# foreman_cv_allow_promote_atix_debian12: "{{ foreman_cv_allow_promote_atix_debian | bool }}"
+
+# foreman_cv_allow_promote_atix_ubuntu: "{{ foreman_cv_allow_promote_atix | bool }}"
+# foreman_cv_allow_promote_atix_ubuntu2004: "{{ foreman_cv_allow_promote_atix_ubuntu | bool }}"
+# foreman_cv_allow_promote_atix_ubuntu2204: "{{ foreman_cv_allow_promote_atix_ubuntu | bool }}"
+# foreman_cv_allow_promote_atix_ubuntu2404: "{{ foreman_cv_allow_promote_atix_ubuntu | bool }}"
+
+# foreman_cv_allow_promote_atix_sles: "{{ foreman_cv_allow_promote_atix | bool }}"
+# foreman_cv_allow_promote_atix_sles12: "{{ foreman_cv_allow_promote_atix_sles | bool }}"
+# foreman_cv_allow_promote_atix_sles15: "{{ foreman_cv_allow_promote_atix_sles | bool }}"
+
+
+### CENTOS
+
+# foreman_cv_allow_promote_centos: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_centos: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_centos: "{{ foreman_ccv_auto_publish | bool }}"
+
+### CENTOS 7
+
+# foreman_cv_allow_promote_centos7: "{{ foreman_cv_allow_promote_centos | bool }}"
+# foreman_ccv_allow_promote_centos7: "{{ foreman_ccv_allow_promote_centos | bool }}"
+# foreman_ccv_auto_publish_centos7: "{{ foreman_ccv_auto_publish_centos | bool }}"
+
+# foreman_cv_allow_promote_centos70: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos70: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos70: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos71: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos71: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos71: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos72: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos72: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos72: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos73: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos73: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos73: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos74: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos74: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos74: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos75: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos75: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos75: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos76: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos76: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos76: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos77: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos77: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos77: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos78: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos78: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos78: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos79: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_ccv_allow_promote_centos79: "{{ foreman_ccv_allow_promote_centos7 | bool }}"
+# foreman_ccv_auto_publish_centos79: "{{ foreman_ccv_auto_publish_centos7 | bool }}"
+
+# foreman_cv_allow_promote_centos7_dotnet: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_sclo: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_opstools: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_nfv: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_nfv_common: "{{ foreman_cv_allow_promote_centos7_sig_nfv | bool }}"
+# foreman_cv_allow_promote_centos7_sig_nfv_fdio: "{{ foreman_cv_allow_promote_centos7_sig_nfv | bool }}"
+
+# foreman_cv_allow_promote_centos7_sig_configmanagement: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_configmanagement_ansible26: "{{ foreman_cv_allow_promote_centos7_sig_configmanagement | bool }}"
+# foreman_cv_allow_promote_centos7_sig_configmanagement_ansible27: "{{ foreman_cv_allow_promote_centos7_sig_configmanagement | bool }}"
+# foreman_cv_allow_promote_centos7_sig_configmanagement_ansible28: "{{ foreman_cv_allow_promote_centos7_sig_configmanagement | bool }}"
+# foreman_cv_allow_promote_centos7_sig_configmanagement_ansible29: "{{ foreman_cv_allow_promote_centos7_sig_configmanagement | bool }}"
+
+# foreman_cv_allow_promote_centos7_sig_paas: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin13: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin14: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin15: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin36: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin37: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin39: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin310: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+# foreman_cv_allow_promote_centos7_sig_paas_openshift_origin311: "{{ foreman_cv_allow_promote_centos7_sig_paas | bool }}"
+
+# foreman_cv_allow_promote_centos7_sig_cloud: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_queens: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_rocky: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_stein: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_train: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_queens_tested: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_rocky_tested: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_stein_tested: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos7_sig_cloud_openstack_train_tested: "{{ foreman_cv_allow_promote_centos7_sig_cloud | bool }}"
+
+# foreman_cv_allow_promote_centos7_sig_virtualization: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_azure: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_ovirt42: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_ovirt43: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_qemu_ev: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_46: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_48: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_410: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_412: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_413: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_414: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos7_sig_virtualization_xen_epel: "{{ foreman_cv_allow_promote_centos7_sig_virtualization | bool }}"
+
+# foreman_cv_allow_promote_centos7_sig_storage: "{{ foreman_cv_allow_promote_centos7 | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_samba411: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster40: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster41: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster5: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster6: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster7: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster8: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_gluster9: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_ceph_jewel: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_ceph_luminous: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_ceph_nautilus: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_nfs_ganesha28: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_nfs_ganesha30: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos7_sig_storage_nfs_ganesha4: "{{ foreman_cv_allow_promote_centos7_sig_storage | bool }}"
+
+### CENTOS 8
+
+# foreman_cv_allow_promote_centos8: "{{ foreman_cv_allow_promote_centos | bool }}"
+# foreman_ccv_allow_promote_centos8: "{{ foreman_ccv_allow_promote_centos | bool }}"
+# foreman_ccv_auto_publish_centos8: "{{ foreman_ccv_auto_publish_centos | bool }}"
+
+# foreman_cv_allow_promote_centos80: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_ccv_allow_promote_centos80: "{{ foreman_ccv_allow_promote_centos8 | bool }}"
+# foreman_ccv_auto_publish_centos80: "{{ foreman_ccv_auto_publish_centos8 | bool }}"
+
+# foreman_cv_allow_promote_centos81: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_ccv_allow_promote_centos81: "{{ foreman_ccv_allow_promote_centos8 | bool }}"
+# foreman_ccv_auto_publish_centos81: "{{ foreman_ccv_auto_publish_centos8 | bool }}"
+
+# foreman_cv_allow_promote_centos82: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_ccv_allow_promote_centos82: "{{ foreman_ccv_allow_promote_centos8 | bool }}"
+# foreman_ccv_auto_publish_centos82: "{{ foreman_ccv_auto_publish_centos8 | bool }}"
+
+# foreman_cv_allow_promote_centos83: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_ccv_allow_promote_centos83: "{{ foreman_ccv_allow_promote_centos8 | bool }}"
+# foreman_ccv_auto_publish_centos83: "{{ foreman_ccv_auto_publish_centos8 | bool }}"
+
+# foreman_cv_allow_promote_centos84: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_ccv_allow_promote_centos84: "{{ foreman_ccv_allow_promote_centos8 | bool }}"
+# foreman_ccv_auto_publish_centos84: "{{ foreman_ccv_auto_publish_centos8 | bool }}"
+
+# foreman_cv_allow_promote_centos85: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_ccv_allow_promote_centos85: "{{ foreman_ccv_allow_promote_centos8 | bool }}"
+# foreman_ccv_auto_publish_centos85: "{{ foreman_ccv_auto_publish_centos8 | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_opstools: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_nfv: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_nfv_extras: "{{ foreman_cv_allow_promote_centos8_sig_nfv | bool }}"
+# foreman_cv_allow_promote_centos8_sig_nfv_openvswitch: "{{ foreman_cv_allow_promote_centos8_sig_nfv | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_configmanagement: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_configmanagement_ansible29: "{{ foreman_cv_allow_promote_centos8_sig_configmanagement | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_kmods: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_kmods_main: "{{ foreman_cv_allow_promote_centos8_sig_kmods | bool }}"
+# foreman_cv_allow_promote_centos8_sig_kmods_rebuild: "{{ foreman_cv_allow_promote_centos8_sig_kmods | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_messaging: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_messaging_qpid_proton: "{{ foreman_cv_allow_promote_centos8_sig_messaging | bool }}"
+# foreman_cv_allow_promote_centos8_sig_messaging_rabbitmq38: "{{ foreman_cv_allow_promote_centos8_sig_messaging | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_cloud: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_cloud_openstack_train: "{{ foreman_cv_allow_promote_centos8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos8_sig_cloud_openstack_ussuri: "{{ foreman_cv_allow_promote_centos8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos8_sig_cloud_openstack_victoria: "{{ foreman_cv_allow_promote_centos8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos8_sig_cloud_openstack_train_tested: "{{ foreman_cv_allow_promote_centos8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos8_sig_cloud_openstack_ussuri_tested: "{{ foreman_cv_allow_promote_centos8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos8_sig_cloud_openstack_victoria_tested: "{{ foreman_cv_allow_promote_centos8_sig_cloud | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_virtualization: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_virtualization_advanced_virtualization: "{{ foreman_cv_allow_promote_centos8_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos8_sig_virtualization_ovirt44: "{{ foreman_cv_allow_promote_centos8_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos8_sig_virtualization_ovirt45: "{{ foreman_cv_allow_promote_centos8_sig_virtualization | bool }}"
+
+# foreman_cv_allow_promote_centos8_sig_storage: "{{ foreman_cv_allow_promote_centos8 | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_samba411: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_samba412: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_samba413: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_samba414: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_samba415: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_gluster6: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_gluster7: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_gluster8: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_gluster9: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_ceph_nautilus: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_ceph_octopus: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_ceph_pacific: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_nfs_ganesha28: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos8_sig_storage_nfs_ganesha30: "{{ foreman_cv_allow_promote_centos8_sig_storage | bool }}"
+
+### CENTOS STREAM 8
+
+# foreman_cv_allow_promote_centos_stream8: "{{ foreman_cv_allow_promote_centos | bool }}"
+# foreman_ccv_allow_promote_centos_stream8: "{{ foreman_ccv_allow_promote_centos | bool }}"
+# foreman_ccv_auto_publish_centos_stream8: "{{ foreman_ccv_auto_publish_centos | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_opstools: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_plus: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_nfv: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_nfv_extras: "{{ foreman_cv_allow_promote_centos_stream8_sig_nfv | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_nfv_openvswitch: "{{ foreman_cv_allow_promote_centos_stream8_sig_nfv | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_configmanagement: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_configmanagement_ansible29: "{{ foreman_cv_allow_promote_centos_stream8_sig_configmanagement | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_configmanagement_ansible5: "{{ foreman_cv_allow_promote_centos_stream8_sig_configmanagement | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_kmods: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_kmods_main: "{{ foreman_cv_allow_promote_centos_stream8_sig_kmods | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_kmods_rebuild: "{{ foreman_cv_allow_promote_centos_stream8_sig_kmods | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_kmods_userspace: "{{ foreman_cv_allow_promote_centos_stream8_sig_kmods | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_messaging: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_messaging_qpid_proton: "{{ foreman_cv_allow_promote_centos_stream8_sig_messaging | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_messaging_rabbitmq38: "{{ foreman_cv_allow_promote_centos_stream8_sig_messaging | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_cloud: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_cloud_openstack_train: "{{ foreman_cv_allow_promote_centos_stream8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_cloud_openstack_ussuri: "{{ foreman_cv_allow_promote_centos_stream8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_cloud_openstack_victoria: "{{ foreman_cv_allow_promote_centos_stream8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_cloud_openstack_train_tested: "{{ foreman_cv_allow_promote_centos_stream8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_cloud_openstack_ussuri_tested: "{{ foreman_cv_allow_promote_centos_stream8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_cloud_openstack_victoria_tested: "{{ foreman_cv_allow_promote_centos_stream8_sig_cloud | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_virtualization: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_virtualization_advanced_virtualization: "{{ foreman_cv_allow_promote_centos_stream8_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_virtualization_ovirt44: "{{ foreman_cv_allow_promote_centos_stream8_sig_virtualization | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_virtualization_ovirt45: "{{ foreman_cv_allow_promote_centos_stream8_sig_virtualization | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_storage: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba411: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba412: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba413: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba414: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba415: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba416: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba417: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_samba418: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_gluster6: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_gluster7: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_gluster8: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_gluster9: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_gluster10: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_gluster11: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_ceph_nautilus: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_ceph_octopus: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_ceph_pacific: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_ceph_quincy: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_nfs_ganesha28: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_storage_nfs_ganesha30: "{{ foreman_cv_allow_promote_centos_stream8_sig_storage | bool }}"
+
+# foreman_cv_allow_promote_centos_stream8_sig_hyperscale: "{{ foreman_cv_allow_promote_centos_stream8 | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_hyperscale_main: "{{ foreman_cv_allow_promote_centos_stream8_sig_hyperscale | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_hyperscale_hotfixes: "{{ foreman_cv_allow_promote_centos_stream8_sig_hyperscale | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_hyperscale_spin: "{{ foreman_cv_allow_promote_centos_stream8_sig_hyperscale | bool }}"
+# foreman_cv_allow_promote_centos_stream8_sig_hyperscale_experimental: "{{ foreman_cv_allow_promote_centos_stream8_sig_hyperscale | bool }}"
+
+### CENTOS STREAM 9
+
+# foreman_cv_allow_promote_centos_stream9: "{{ foreman_cv_allow_promote_centos | bool }}"
+# foreman_ccv_allow_promote_centos_stream9: "{{ foreman_ccv_allow_promote_centos | bool }}"
+# foreman_ccv_auto_publish_centos_stream9: "{{ foreman_ccv_auto_publish_centos | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_opstools: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_nfv: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_nfv_openvswitch: "{{ foreman_cv_allow_promote_centos_stream9_sig_nfv | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_kmods: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_kmods_main: "{{ foreman_cv_allow_promote_centos_stream9_sig_kmods | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_kmods_rebuild: "{{ foreman_cv_allow_promote_centos_stream9_sig_kmods | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_kmods_userspace: "{{ foreman_cv_allow_promote_centos_stream9_sig_kmods | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_messaging: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_messaging_rabbitmq38: "{{ foreman_cv_allow_promote_centos_stream9_sig_messaging | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_cloud: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_client_xena: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_yoga: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_zed: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_antelope: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_yoga_tested: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_zed_tested: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_openstack_antelope_tested: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_okd413: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_cloud_okd414: "{{ foreman_cv_allow_promote_centos_stream9_sig_cloud | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_virtualization: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_virtualization_ovirt45: "{{ foreman_cv_allow_promote_centos_stream9_sig_virtualization | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_storage: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_common: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_samba414: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_samba415: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_samba416: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_samba417: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_samba418: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_gluster9: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_gluster10: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_gluster11: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_ceph_pacific: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_ceph_quincy: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_nfs_ganesha4: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_storage_nfs_ganesha5: "{{ foreman_cv_allow_promote_centos_stream9_sig_storage | bool }}"
+
+# foreman_cv_allow_promote_centos_stream9_sig_hyperscale: "{{ foreman_cv_allow_promote_centos_stream9 | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_hyperscale_main: "{{ foreman_cv_allow_promote_centos_stream9_sig_hyperscale | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_hyperscale_spin: "{{ foreman_cv_allow_promote_centos_stream9_sig_hyperscale | bool }}"
+# foreman_cv_allow_promote_centos_stream9_sig_hyperscale_experimental: "{{ foreman_cv_allow_promote_centos_stream9_sig_hyperscale | bool }}"
+
+
+### CEPH
+
+# foreman_cv_allow_promote_ceph: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_ceph_nautilus: "{{ foreman_cv_allow_promote_ceph | bool }}"
+# foreman_cv_allow_promote_ceph_nautilus_el7: "{{ foreman_cv_allow_promote_ceph_nautilus | bool }}"
+# foreman_cv_allow_promote_ceph_nautilus_el8: "{{ foreman_cv_allow_promote_ceph_nautilus | bool }}"
+# foreman_cv_allow_promote_ceph_nautilus_deb9: "{{ foreman_cv_allow_promote_ceph_nautilus | bool }}"
+# foreman_cv_allow_promote_ceph_nautilus_deb10: "{{ foreman_cv_allow_promote_ceph_nautilus | bool }}"
+# foreman_cv_allow_promote_ceph_nautilus_ub1804: "{{ foreman_cv_allow_promote_ceph_nautilus | bool }}"
+# foreman_cv_allow_promote_ceph_nautilus_ub2004: "{{ foreman_cv_allow_promote_ceph_nautilus | bool }}"
+
+# foreman_cv_allow_promote_ceph_octopus: "{{ foreman_cv_allow_promote_ceph | bool }}"
+# foreman_cv_allow_promote_ceph_octopus_el7: "{{ foreman_cv_allow_promote_ceph_octopus | bool }}"
+# foreman_cv_allow_promote_ceph_octopus_el8: "{{ foreman_cv_allow_promote_ceph_octopus | bool }}"
+# foreman_cv_allow_promote_ceph_octopus_deb10: "{{ foreman_cv_allow_promote_ceph_octopus | bool }}"
+# foreman_cv_allow_promote_ceph_octopus_ub1804: "{{ foreman_cv_allow_promote_ceph_octopus | bool }}"
+# foreman_cv_allow_promote_ceph_octopus_ub2004: "{{ foreman_cv_allow_promote_ceph_octopus | bool }}"
+
+# foreman_cv_allow_promote_ceph_pacific: "{{ foreman_cv_allow_promote_ceph | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_el7: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_el8: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_el9: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_deb10: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_deb11: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_ub1804: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+# foreman_cv_allow_promote_ceph_pacific_ub2004: "{{ foreman_cv_allow_promote_ceph_pacific | bool }}"
+
+# foreman_cv_allow_promote_ceph_quincy: "{{ foreman_cv_allow_promote_ceph | bool }}"
+# foreman_cv_allow_promote_ceph_quincy_el7: "{{ foreman_cv_allow_promote_ceph_quincy | bool }}"
+# foreman_cv_allow_promote_ceph_quincy_el8: "{{ foreman_cv_allow_promote_ceph_quincy | bool }}"
+# foreman_cv_allow_promote_ceph_quincy_el9: "{{ foreman_cv_allow_promote_ceph_quincy | bool }}"
+# foreman_cv_allow_promote_ceph_quincy_deb11: "{{ foreman_cv_allow_promote_ceph_quincy | bool }}"
+# foreman_cv_allow_promote_ceph_quincy_ub2004: "{{ foreman_cv_allow_promote_ceph_quincy | bool }}"
+
+# foreman_cv_allow_promote_ceph_reef: "{{ foreman_cv_allow_promote_ceph | bool }}"
+# foreman_cv_allow_promote_ceph_reef_el8: "{{ foreman_cv_allow_promote_ceph_reef | bool }}"
+# foreman_cv_allow_promote_ceph_reef_el9: "{{ foreman_cv_allow_promote_ceph_reef | bool }}"
+# foreman_cv_allow_promote_ceph_reef_deb11: "{{ foreman_cv_allow_promote_ceph_reef | bool }}"
+# foreman_cv_allow_promote_ceph_reef_ub2004: "{{ foreman_cv_allow_promote_ceph_reef | bool }}"
+# foreman_cv_allow_promote_ceph_reef_ub2204: "{{ foreman_cv_allow_promote_ceph_reef | bool }}"
+
+# foreman_cv_allow_promote_ceph_squid: "{{ foreman_cv_allow_promote_ceph | bool }}"
+# foreman_cv_allow_promote_ceph_squid_el8: "{{ foreman_cv_allow_promote_ceph_squid | bool }}"
+# foreman_cv_allow_promote_ceph_squid_el9: "{{ foreman_cv_allow_promote_ceph_squid | bool }}"
+# foreman_cv_allow_promote_ceph_squid_deb11: "{{ foreman_cv_allow_promote_ceph_squid | bool }}"
+# foreman_cv_allow_promote_ceph_squid_ub2204: "{{ foreman_cv_allow_promote_ceph_squid | bool }}"
+
+# foreman_cv_allow_promote_ceph_docker: "{{ foreman_cv_allow_promote_ceph | bool }}"
+
+
+### DATADOG
+
+# foreman_cv_allow_promote_datadog: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_datadog_v6: "{{ foreman_cv_allow_promote_datadog | bool }}"
+# foreman_cv_allow_promote_datadog_v7: "{{ foreman_cv_allow_promote_datadog | bool }}"
+
+
+### DEBIAN
+
+# foreman_cv_allow_promote_debian: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_debian: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_debian: "{{ foreman_ccv_auto_publish | bool }}"
+
+# foreman_cv_allow_promote_debian9: "{{ foreman_cv_allow_promote_debian | bool }}"
+# foreman_ccv_allow_promote_debian9: "{{ foreman_ccv_allow_promote_debian | bool }}"
+# foreman_ccv_auto_publish_debian9: "{{ foreman_ccv_auto_publish_debian | bool }}"
+
+# foreman_cv_allow_promote_debian10: "{{ foreman_cv_allow_promote_debian | bool }}"
+# foreman_ccv_allow_promote_debian10: "{{ foreman_ccv_allow_promote_debian | bool }}"
+# foreman_ccv_auto_publish_debian10: "{{ foreman_ccv_auto_publish_debian | bool }}"
+
+# foreman_cv_allow_promote_debian11: "{{ foreman_cv_allow_promote_debian | bool }}"
+# foreman_ccv_allow_promote_debian11: "{{ foreman_ccv_allow_promote_debian | bool }}"
+# foreman_ccv_auto_publish_debian11: "{{ foreman_ccv_auto_publish_debian | bool }}"
+
+# foreman_cv_allow_promote_debian12: "{{ foreman_cv_allow_promote_debian | bool }}"
+# foreman_ccv_allow_promote_debian12: "{{ foreman_ccv_allow_promote_debian | bool }}"
+# foreman_ccv_auto_publish_debian12: "{{ foreman_ccv_auto_publish_debian | bool }}"
+
+
+### DOCKER
+
+# foreman_cv_allow_promote_docker: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_docker_ce: "{{ foreman_cv_allow_promote_docker | bool }}"
+
+# foreman_cv_allow_promote_docker_ce_el7: "{{ foreman_cv_allow_promote_docker_ce | bool }}"
+# foreman_cv_allow_promote_docker_ce_el8: "{{ foreman_cv_allow_promote_docker_ce | bool }}"
+# foreman_cv_allow_promote_docker_ce_el9: "{{ foreman_cv_allow_promote_docker_ce | bool }}"
+
+# foreman_cv_allow_promote_docker_ee: "{{ foreman_cv_allow_promote_docker | bool }}"
+
+# foreman_cv_allow_promote_docker_ee_el7: "{{ foreman_cv_allow_promote_docker_ee | bool }}"
+# foreman_cv_allow_promote_docker_ee_el8: "{{ foreman_cv_allow_promote_docker_ee | bool }}"
+# foreman_cv_allow_promote_docker_ee_el9: "{{ foreman_cv_allow_promote_docker_ee | bool }}"
+
+
+### ELREPO
+
+# foreman_cv_allow_promote_elrepo: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_elrepo_el7: "{{ foreman_cv_allow_promote_elrepo | bool }}"
+# foreman_cv_allow_promote_elrepo_el8: "{{ foreman_cv_allow_promote_elrepo | bool }}"
+# foreman_cv_allow_promote_elrepo_el9: "{{ foreman_cv_allow_promote_elrepo | bool }}"
+
+
+### EPEL
+
+# foreman_cv_allow_promote_epel: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_epel_el7: "{{ foreman_cv_allow_promote_epel | bool }}"
+# foreman_cv_allow_promote_epel_el8: "{{ foreman_cv_allow_promote_epel | bool }}"
+# foreman_cv_allow_promote_epel_el9: "{{ foreman_cv_allow_promote_epel | bool }}"
+
+
+### FEDORA COPR
+
+# foreman_cv_allow_promote_fedora_copr: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_fedora_copr_dgoodwin_subscription_manager: "{{ foreman_cv_allow_promote_fedora_copr | bool }}"
+# foreman_cv_allow_promote_fedora_copr_dgoodwin_subscription_manager_ol6: "{{ foreman_cv_allow_promote_fedora_copr_dgoodwin_subscription_manager | bool }}"
+# foreman_cv_allow_promote_fedora_copr_dgoodwin_subscription_manager_ol7: "{{ foreman_cv_allow_promote_fedora_copr_dgoodwin_subscription_manager | bool }}"
+
+# foreman_cv_allow_promote_fedora_copr_dmann_subscription_manager: "{{ foreman_cv_allow_promote_fedora_copr | bool }}"
+# foreman_cv_allow_promote_fedora_copr_dmann_subscription_manager_ol8: "{{ foreman_cv_allow_promote_fedora_copr_dmann_subscription_manager | bool }}"
+
+
+### FOREMAN
+
+# foreman_cv_allow_promote_foreman: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_foreman_el7: "{{ foreman_cv_allow_promote_foreman | bool }}"
+# foreman_cv_allow_promote_foreman_el8: "{{ foreman_cv_allow_promote_foreman | bool }}"
+# foreman_cv_allow_promote_foreman_el9: "{{ foreman_cv_allow_promote_foreman | bool }}"
+
+
+### HASHICORP
+
+# foreman_cv_allow_promote_hashicorp: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_hashicorp_el7: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_el8: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_el9: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_fedora37: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_fedora38: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_fedora39: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_debian9: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_debian10: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_debian11: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_debian12: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_ubuntu1804: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_ubuntu2004: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+# foreman_cv_allow_promote_hashicorp_ubuntu2204: "{{ foreman_cv_allow_promote_hashicorp | bool }}"
+
+
+### KUBERNETES
+
+# foreman_cv_allow_promote_kubernetes: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_kubernetes_el7: "{{ foreman_cv_allow_promote_kubernetes | bool }}"
+
+
+### MICROSOFT
+
+# foreman_cv_allow_promote_microsoft: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_microsoft_azure_cli: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+
+# foreman_cv_allow_promote_microsoft_azure_cli_el: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_debian9: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_debian10: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_debian11: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_debian12: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_ubuntu1804: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_ubuntu2004: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+# foreman_cv_allow_promote_microsoft_azure_cli_ubuntu2204: "{{ foreman_cv_allow_promote_microsoft_azure_cli | bool }}"
+
+# foreman_cv_allow_promote_microsoft_edge: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+
+# foreman_cv_allow_promote_microsoft_edge_el: "{{ foreman_cv_allow_promote_microsoft_edge | bool }}"
+# foreman_cv_allow_promote_microsoft_edge_deb: "{{ foreman_cv_allow_promote_microsoft_edge | bool }}"
+
+# foreman_cv_allow_promote_microsoft_vscode: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+
+# foreman_cv_allow_promote_microsoft_vscode_el: "{{ foreman_cv_allow_promote_microsoft_vscode | bool }}"
+# foreman_cv_allow_promote_microsoft_vscode_deb: "{{ foreman_cv_allow_promote_microsoft_vscode | bool }}"
+
+# foreman_cv_allow_promote_microsoft_prod: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+
+# foreman_cv_allow_promote_microsoft_prod_el7: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_el8: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_el9: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_fedora37: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_fedora38: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_fedora39: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_debian9: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_debian10: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_debian11: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_debian12: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_ubuntu1804: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_ubuntu2004: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+# foreman_cv_allow_promote_microsoft_prod_ubuntu2204: "{{ foreman_cv_allow_promote_microsoft_prod | bool }}"
+
+# foreman_cv_allow_promote_microsoft_mssql_server_2017: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2017_el7: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2017 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2017_el8: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2017 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2017_ubuntu1804: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2017 | bool }}"
+
+# foreman_cv_allow_promote_microsoft_mssql_server_2019: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2019_el7: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2019 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2019_el8: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2019 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2019_ubuntu1804: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2019 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2019_ubuntu2004: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2019 | bool }}"
+
+# foreman_cv_allow_promote_microsoft_mssql_server_2022: "{{ foreman_cv_allow_promote_microsoft | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2022_el8: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2022 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2022_el9: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2022 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2022_ubuntu2004: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2022 | bool }}"
+# foreman_cv_allow_promote_microsoft_mssql_server_2022_ubuntu2204: "{{ foreman_cv_allow_promote_microsoft_mssql_server_2022 | bool }}"
+
+
+### NGINX
+
+# foreman_cv_allow_promote_nginx: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_nginx_el7: "{{ foreman_cv_allow_promote_nginx | bool }}"
+# foreman_cv_allow_promote_nginx_el8: "{{ foreman_cv_allow_promote_nginx | bool }}"
+# foreman_cv_allow_promote_nginx_el9: "{{ foreman_cv_allow_promote_nginx | bool }}"
+
+
+### ORACLE LINUX
+
+# foreman_cv_allow_promote_ol: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_ol: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_ol: "{{ foreman_ccv_auto_publish | bool }}"
+
+### ORACLE LINUX 5/6
+
+# foreman_cv_allow_promote_ol5: "{{ foreman_cv_allow_promote_ol | bool }}"
+# foreman_ccv_allow_promote_ol5: "{{ foreman_ccv_allow_promote_ol | bool }}"
+# foreman_ccv_auto_publish_ol5: "{{ foreman_ccv_auto_publish_ol | bool }}"
+
+# foreman_cv_allow_promote_ol6: "{{ foreman_cv_allow_promote_ol | bool }}"
+# foreman_ccv_allow_promote_ol6: "{{ foreman_ccv_allow_promote_ol | bool }}"
+# foreman_ccv_auto_publish_ol6: "{{ foreman_ccv_auto_publish_ol | bool }}"
+
+### ORACLE LINUX 7
+
+# foreman_cv_allow_promote_ol7: "{{ foreman_cv_allow_promote_ol | bool }}"
+# foreman_ccv_allow_promote_ol7: "{{ foreman_ccv_allow_promote_ol | bool }}"
+# foreman_ccv_auto_publish_ol7: "{{ foreman_ccv_auto_publish_ol | bool }}"
+
+# foreman_cv_allow_promote_ol70: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol70: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol70: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol71: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol71: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol71: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol72: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol72: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol72: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol73: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol73: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol73: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol74: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol74: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol74: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol75: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol75: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol75: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol76: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol76: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol76: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol77: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol77: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol77: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol78: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol78: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol78: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol79: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_ccv_allow_promote_ol79: "{{ foreman_ccv_allow_promote_ol7 | bool }}"
+# foreman_ccv_auto_publish_ol79: "{{ foreman_ccv_auto_publish_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol7_uek: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr3: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr3_ofed: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr4: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr4_ofed: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr5: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr5_rdma: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr5_developer: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr6: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr6_rdma: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_uekr6_developer: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_modrhck: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol7_leapp: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_instantclient: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_olcne: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_security_validation: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+
+# foreman_cv_allow_promote_ol7_mysql: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_mysql55: "{{ foreman_cv_allow_promote_ol7_mysql | bool }}"
+# foreman_cv_allow_promote_ol7_mysql56: "{{ foreman_cv_allow_promote_ol7_mysql | bool }}"
+# foreman_cv_allow_promote_ol7_mysql57: "{{ foreman_cv_allow_promote_ol7_mysql | bool }}"
+# foreman_cv_allow_promote_ol7_mysql80: "{{ foreman_cv_allow_promote_ol7_mysql | bool }}"
+
+# foreman_cv_allow_promote_ol7_cloud: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_cloud_openstack20: "{{ foreman_cv_allow_promote_ol7_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_cloud_openstack21: "{{ foreman_cv_allow_promote_ol7_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_cloud_openstack30: "{{ foreman_cv_allow_promote_ol7_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_cloud_openstack40: "{{ foreman_cv_allow_promote_ol7_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_cloud_openstack50: "{{ foreman_cv_allow_promote_ol7_cloud | bool }}"
+
+# foreman_cv_allow_promote_ol7_virtualization: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_virtualization_kvm_utils: "{{ foreman_cv_allow_promote_ol7_virtualization | bool }}"
+# foreman_cv_allow_promote_ol7_virtualization_ovirt42: "{{ foreman_cv_allow_promote_ol7_virtualization | bool }}"
+# foreman_cv_allow_promote_ol7_virtualization_ovirt43: "{{ foreman_cv_allow_promote_ol7_virtualization | bool }}"
+
+# foreman_cv_allow_promote_ol7_storage: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_storage_ceph10: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_ceph20: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_ceph30: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_gluster312: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_gluster41: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_gluster5: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_gluster6: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+# foreman_cv_allow_promote_ol7_storage_gluster8: "{{ foreman_cv_allow_promote_ol7_storage | bool }}"
+
+# foreman_cv_allow_promote_ol7_developer: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go110: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go111: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go112: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go113: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go114: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go115: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go116: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go117: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go118: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_go119: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_php74: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs4: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs6: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs8: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs10: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs12: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs14: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+# foreman_cv_allow_promote_ol7_developer_nodejs16: "{{ foreman_cv_allow_promote_ol7_developer | bool }}"
+
+# foreman_cv_allow_promote_ol7_olm: "{{ foreman_cv_allow_promote_ol7 | bool }}"
+# foreman_cv_allow_promote_ol7_olm_spacewalk26: "{{ foreman_cv_allow_promote_ol7_olm | bool }}"
+# foreman_cv_allow_promote_ol7_olm_spacewalk27: "{{ foreman_cv_allow_promote_ol7_olm | bool }}"
+# foreman_cv_allow_promote_ol7_olm_spacewalk210: "{{ foreman_cv_allow_promote_ol7_olm | bool }}"
+# foreman_cv_allow_promote_ol7_olm_oraclelinuxmanager210: "{{ foreman_cv_allow_promote_ol7_olm | bool }}"
+
+### ORACLE LINUX 8
+
+# foreman_cv_allow_promote_ol8: "{{ foreman_cv_allow_promote_ol | bool }}"
+# foreman_ccv_allow_promote_ol8: "{{ foreman_ccv_allow_promote_ol | bool }}"
+# foreman_ccv_auto_publish_ol8: "{{ foreman_ccv_auto_publish_ol | bool }}"
+
+# foreman_cv_allow_promote_ol80: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol80: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol80: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol81: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol81: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol81: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol82: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol82: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol82: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol83: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol83: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol83: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol84: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol84: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol84: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol85: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol85: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol85: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol86: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol86: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol86: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol87: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol87: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol87: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol88: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol88: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol88: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol89: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol89: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol89: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol810: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_ccv_allow_promote_ol810: "{{ foreman_ccv_allow_promote_ol8 | bool }}"
+# foreman_ccv_auto_publish_ol810: "{{ foreman_ccv_auto_publish_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol8_uek: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_uekr6: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_uekr6_developer: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_uekr6_rdma: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_uekr7: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_uekr7_developer: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_uekr7_rdma: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_modrhck: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol8_instantclient: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_mysql: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_olm: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_am: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_am10: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_am20: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_olcne: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+
+# foreman_cv_allow_promote_ol8_virtualization: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_virtualization_kvm_utils: "{{ foreman_cv_allow_promote_ol8_virtualization | bool }}"
+# foreman_cv_allow_promote_ol8_virtualization_ovirt44: "{{ foreman_cv_allow_promote_ol8_virtualization | bool }}"
+
+# foreman_cv_allow_promote_ol8_storage: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+# foreman_cv_allow_promote_ol8_security_validation: "{{ foreman_cv_allow_promote_ol8 | bool }}"
+
+### ORACLE LINUX 9
+
+# foreman_cv_allow_promote_ol9: "{{ foreman_cv_allow_promote_ol | bool }}"
+# foreman_ccv_allow_promote_ol9: "{{ foreman_ccv_allow_promote_ol | bool }}"
+# foreman_ccv_auto_publish_ol9: "{{ foreman_ccv_auto_publish_ol | bool }}"
+
+# foreman_cv_allow_promote_ol90: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_ccv_allow_promote_ol90: "{{ foreman_ccv_allow_promote_ol9 | bool }}"
+# foreman_ccv_auto_publish_ol90: "{{ foreman_ccv_auto_publish_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol91: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_ccv_allow_promote_ol91: "{{ foreman_ccv_allow_promote_ol9 | bool }}"
+# foreman_ccv_auto_publish_ol91: "{{ foreman_ccv_auto_publish_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol92: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_ccv_allow_promote_ol92: "{{ foreman_ccv_allow_promote_ol9 | bool }}"
+# foreman_ccv_auto_publish_ol92: "{{ foreman_ccv_auto_publish_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol93: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_ccv_allow_promote_ol93: "{{ foreman_ccv_allow_promote_ol9 | bool }}"
+# foreman_ccv_auto_publish_ol93: "{{ foreman_ccv_auto_publish_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol94: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_ccv_allow_promote_ol94: "{{ foreman_ccv_allow_promote_ol9 | bool }}"
+# foreman_ccv_auto_publish_ol94: "{{ foreman_ccv_auto_publish_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol9_uek: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_uekr7: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_uekr7_developer: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_rdma: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_modrhck: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol9_instantclient: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_mysql: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_olm: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_am: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_olcne: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+
+# foreman_cv_allow_promote_ol9_virtualization: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_virtualization_kvm_utils: "{{ foreman_cv_allow_promote_ol9_virtualization | bool }}"
+
+# foreman_cv_allow_promote_ol9_storage: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+# foreman_cv_allow_promote_ol9_security_validation: "{{ foreman_cv_allow_promote_ol9 | bool }}"
+
+
+### ORACLE LINUX ULN
+
+# foreman_cv_allow_promote_ol_uln: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_ol_uln: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_ol_uln: "{{ foreman_ccv_auto_publish | bool }}"
+
+### ORACLE LINUX 5/6 ULN
+
+# foreman_cv_allow_promote_ol5_uln: "{{ foreman_cv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_allow_promote_ol5_uln: "{{ foreman_ccv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_auto_publish_ol5_uln: "{{ foreman_ccv_auto_publish_ol_uln | bool }}"
+
+# foreman_cv_allow_promote_ol6_uln: "{{ foreman_cv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_allow_promote_ol6_uln: "{{ foreman_ccv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_auto_publish_ol6_uln: "{{ foreman_ccv_auto_publish_ol_uln | bool }}"
+
+### ORACLE LINUX 7 ULN
+
+# foreman_cv_allow_promote_ol7_uln: "{{ foreman_cv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_allow_promote_ol7_uln: "{{ foreman_ccv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_auto_publish_ol7_uln: "{{ foreman_ccv_auto_publish_ol_uln | bool }}"
+
+# foreman_cv_allow_promote_ol70_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol70_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol70_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol71_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol71_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol71_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol72_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol72_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol72_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol73_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol73_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol73_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol74_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol74_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol74_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol75_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol75_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol75_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol76_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol76_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol76_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol77_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol77_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol77_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol78_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol78_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol78_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol79_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_allow_promote_ol79_uln: "{{ foreman_ccv_allow_promote_ol7_uln | bool }}"
+# foreman_ccv_auto_publish_ol79_uln: "{{ foreman_ccv_auto_publish_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol70_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol71_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol72_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol73_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol74_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol75_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol76_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol77_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol78_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol79_patch_uln: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_uek: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr3: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr3_ofed: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr3_dtrace: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr4: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr4_ofed: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr4_dtrace: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr4_archive: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr5: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr5_archive: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr5_rdma: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr5_developer: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr6: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr6_rdma: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_uekr6_developer: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_modrhck: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_ksplice: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_sap: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_leapp: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_instantclient: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_olcne: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_security_validation: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_mysql: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_mysql55: "{{ foreman_cv_allow_promote_ol7_uln_mysql | bool }}"
+# foreman_cv_allow_promote_ol7_uln_mysql56: "{{ foreman_cv_allow_promote_ol7_uln_mysql | bool }}"
+# foreman_cv_allow_promote_ol7_uln_mysql57: "{{ foreman_cv_allow_promote_ol7_uln_mysql | bool }}"
+# foreman_cv_allow_promote_ol7_uln_mysql80: "{{ foreman_cv_allow_promote_ol7_uln_mysql | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_cloud: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_cloud_openstack20: "{{ foreman_cv_allow_promote_ol7_uln_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_uln_cloud_openstack21: "{{ foreman_cv_allow_promote_ol7_uln_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_uln_cloud_openstack30: "{{ foreman_cv_allow_promote_ol7_uln_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_uln_cloud_openstack40: "{{ foreman_cv_allow_promote_ol7_uln_cloud | bool }}"
+# foreman_cv_allow_promote_ol7_uln_cloud_openstack50: "{{ foreman_cv_allow_promote_ol7_uln_cloud | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_virtualization: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_virtualization_kvm_utils: "{{ foreman_cv_allow_promote_ol7_uln_virtualization | bool }}"
+# foreman_cv_allow_promote_ol7_uln_virtualization_ovirt42: "{{ foreman_cv_allow_promote_ol7_uln_virtualization | bool }}"
+# foreman_cv_allow_promote_ol7_uln_virtualization_ovirt43: "{{ foreman_cv_allow_promote_ol7_uln_virtualization | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_storage: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_ceph10: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_ceph20: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_ceph30: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_gluster312: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_gluster41: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_gluster5: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_gluster6: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+# foreman_cv_allow_promote_ol7_uln_storage_gluster8: "{{ foreman_cv_allow_promote_ol7_uln_storage | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_developer: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go110: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go111: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go112: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go113: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go114: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go115: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go116: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go117: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go118: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_go119: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+# foreman_cv_allow_promote_ol7_uln_developer_php74: "{{ foreman_cv_allow_promote_ol7_uln_developer | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_olm: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+# foreman_cv_allow_promote_ol7_uln_olm_spacewalk26: "{{ foreman_cv_allow_promote_ol7_uln_olm | bool }}"
+# foreman_cv_allow_promote_ol7_uln_olm_spacewalk27: "{{ foreman_cv_allow_promote_ol7_uln_olm | bool }}"
+# foreman_cv_allow_promote_ol7_uln_olm_spacewalk210: "{{ foreman_cv_allow_promote_ol7_uln_olm | bool }}"
+# foreman_cv_allow_promote_ol7_uln_olm_oraclelinuxmanager210: "{{ foreman_cv_allow_promote_ol7_uln_olm | bool }}"
+
+# foreman_cv_allow_promote_ol7_uln_exadata: "{{ foreman_cv_allow_promote_ol7_uln | bool }}"
+
+### ORACLE LINUX 8 ULN
+
+# foreman_cv_allow_promote_ol8_uln: "{{ foreman_cv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_allow_promote_ol8_uln: "{{ foreman_ccv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_auto_publish_ol8_uln: "{{ foreman_ccv_auto_publish_ol_uln | bool }}"
+
+# foreman_cv_allow_promote_ol80_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol80_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol80_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol81_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol81_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol81_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol82_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol82_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol82_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol83_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol83_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol83_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol84_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol84_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol84_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol85_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol85_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol85_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol86_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol86_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol86_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol87_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol87_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol87_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol88_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol88_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol88_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol89_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol89_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol89_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol810_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_allow_promote_ol810_uln: "{{ foreman_ccv_allow_promote_ol8_uln | bool }}"
+# foreman_ccv_auto_publish_ol810_uln: "{{ foreman_ccv_auto_publish_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol80_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol81_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol82_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol83_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol84_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol85_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol86_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol87_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol88_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol89_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol810_patch_uln: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol8_uln_uek: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_uekr6: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_uekr6_developer: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_uekr6_rdma: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_uekr7: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_uekr7_developer: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_uekr7_rdma: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_modrhck: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol8_uln_ksplice: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_instantclient: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_mysql: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_olm: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_am: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_am10: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_am20: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_olcne: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+
+# foreman_cv_allow_promote_ol8_uln_virtualization: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_virtualization_kvm_utils: "{{ foreman_cv_allow_promote_ol8_uln_virtualization | bool }}"
+# foreman_cv_allow_promote_ol8_uln_virtualization_ovirt44: "{{ foreman_cv_allow_promote_ol8_uln_virtualization | bool }}"
+
+# foreman_cv_allow_promote_ol8_uln_storage: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+# foreman_cv_allow_promote_ol8_uln_security_validation: "{{ foreman_cv_allow_promote_ol8_uln | bool }}"
+
+### ORACLE LINUX 9 ULN
+
+# foreman_cv_allow_promote_ol9_uln: "{{ foreman_cv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_allow_promote_ol9_uln: "{{ foreman_ccv_allow_promote_ol_uln | bool }}"
+# foreman_ccv_auto_publish_ol9_uln: "{{ foreman_ccv_auto_publish_ol_uln | bool }}"
+
+# foreman_cv_allow_promote_ol90_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_allow_promote_ol90_uln: "{{ foreman_ccv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_auto_publish_ol90_uln: "{{ foreman_ccv_auto_publish_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol91_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_allow_promote_ol91_uln: "{{ foreman_ccv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_auto_publish_ol91_uln: "{{ foreman_ccv_auto_publish_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol92_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_allow_promote_ol92_uln: "{{ foreman_ccv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_auto_publish_ol92_uln: "{{ foreman_ccv_auto_publish_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol93_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_allow_promote_ol93_uln: "{{ foreman_ccv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_auto_publish_ol93_uln: "{{ foreman_ccv_auto_publish_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol94_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_allow_promote_ol94_uln: "{{ foreman_ccv_allow_promote_ol9_uln | bool }}"
+# foreman_ccv_auto_publish_ol94_uln: "{{ foreman_ccv_auto_publish_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol90_patch_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol91_patch_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol92_patch_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol93_patch_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol94_patch_uln: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol9_uln_uek: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_uekr7: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_uekr7_developer: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_rdma: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_modrhck: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol9_uln_ksplice: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_instantclient: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_mysql: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_olm: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_am: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_olcne: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol9_uln_virtualization: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_virtualization_kvm_utils: "{{ foreman_cv_allow_promote_ol9_uln_virtualization | bool }}"
+
+# foreman_cv_allow_promote_ol9_uln_storage: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+# foreman_cv_allow_promote_ol9_uln_security_validation: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+
+# foreman_cv_allow_promote_ol9_uln_oci: "{{ foreman_cv_allow_promote_ol9_uln | bool }}"
+
+
+### REDHAT
+
+# foreman_cv_allow_promote_redhat: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_redhat: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_redhat: "{{ foreman_ccv_auto_publish | bool }}"
+
+### REDHAT 7
+
+# foreman_cv_allow_promote_redhat7: "{{ foreman_cv_allow_promote_redhat | bool }}"
+# foreman_ccv_allow_promote_redhat7: "{{ foreman_ccv_allow_promote_redhat | bool }}"
+# foreman_ccv_auto_publish_redhat7: "{{ foreman_ccv_auto_publish_redhat | bool }}"
+
+# foreman_cv_allow_promote_redhat70: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat70: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat70: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat71: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat71: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat71: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat72: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat72: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat72: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat73: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat73: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat73: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat74: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat74: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat74: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat75: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat75: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat75: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat76: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat76: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat76: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat77: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat77: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat77: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat78: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat78: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat78: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat79: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat79: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat79: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat7_sat: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat7_sat: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat7_sat: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat7_aap: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat7_aap: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat7_aap: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+# foreman_cv_allow_promote_redhat7_rhocp: "{{ foreman_cv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_allow_promote_redhat7_rhocp: "{{ foreman_ccv_allow_promote_redhat7 | bool }}"
+# foreman_ccv_auto_publish_redhat7_rhocp: "{{ foreman_ccv_auto_publish_redhat7 | bool }}"
+
+### REDHAT 8
+
+# foreman_cv_allow_promote_redhat8: "{{ foreman_cv_allow_promote_redhat | bool }}"
+# foreman_ccv_allow_promote_redhat8: "{{ foreman_ccv_allow_promote_redhat | bool }}"
+# foreman_ccv_auto_publish_redhat8: "{{ foreman_ccv_auto_publish_redhat | bool }}"
+
+# foreman_cv_allow_promote_redhat80: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat80: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat80: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat81: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat81: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat81: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat82: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat82: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat82: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat83: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat83: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat83: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat84: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat84: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat84: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat85: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat85: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat85: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat86: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat86: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat86: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat87: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat87: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat87: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat88: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat88: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat88: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat89: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat89: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat89: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat810: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat810: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat810: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat8_sat: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat8_sat: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat8_sat: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat8_aap: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat8_aap: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat8_aap: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+# foreman_cv_allow_promote_redhat8_rhocp: "{{ foreman_cv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_allow_promote_redhat8_rhocp: "{{ foreman_ccv_allow_promote_redhat8 | bool }}"
+# foreman_ccv_auto_publish_redhat8_rhocp: "{{ foreman_ccv_auto_publish_redhat8 | bool }}"
+
+### REDHAT 9
+
+# foreman_cv_allow_promote_redhat9: "{{ foreman_cv_allow_promote_redhat | bool }}"
+# foreman_ccv_allow_promote_redhat9: "{{ foreman_ccv_allow_promote_redhat | bool }}"
+# foreman_ccv_auto_publish_redhat9: "{{ foreman_ccv_auto_publish_redhat | bool }}"
+
+# foreman_cv_allow_promote_redhat90: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat90: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat90: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+# foreman_cv_allow_promote_redhat91: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat91: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat91: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+# foreman_cv_allow_promote_redhat92: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat92: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat92: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+# foreman_cv_allow_promote_redhat93: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat93: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat93: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+# foreman_cv_allow_promote_redhat94: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat94: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat94: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+# foreman_cv_allow_promote_redhat9_aap: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat9_aap: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat9_aap: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+# foreman_cv_allow_promote_redhat9_rhocp: "{{ foreman_cv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_allow_promote_redhat9_rhocp: "{{ foreman_ccv_allow_promote_redhat9 | bool }}"
+# foreman_ccv_auto_publish_redhat9_rhocp: "{{ foreman_ccv_auto_publish_redhat9 | bool }}"
+
+
+### REMI
+
+# foreman_cv_allow_promote_remi: "{{ foreman_cv_allow_promote | bool }}"
+
+# foreman_cv_allow_promote_remi_el7: "{{ foreman_cv_allow_promote_remi | bool }}"
+# foreman_cv_allow_promote_remi_el8: "{{ foreman_cv_allow_promote_remi | bool }}"
+# foreman_cv_allow_promote_remi_el9: "{{ foreman_cv_allow_promote_remi | bool }}"
+
+
+### ROCKY
+
+# foreman_cv_allow_promote_rocky: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_rocky: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_rocky: "{{ foreman_ccv_auto_publish | bool }}"
+
+### ROCKY 8
+
+# foreman_cv_allow_promote_rocky8: "{{ foreman_cv_allow_promote_rocky | bool }}"
+# foreman_ccv_allow_promote_rocky8: "{{ foreman_ccv_allow_promote_rocky | bool }}"
+# foreman_ccv_auto_publish_rocky8: "{{ foreman_ccv_auto_publish_rocky | bool }}"
+
+# foreman_cv_allow_promote_rocky84: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky84: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky84: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky85: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky85: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky85: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky86: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky86: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky86: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky87: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky87: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky87: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky88: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky88: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky88: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky89: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky89: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky89: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky810: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_allow_promote_rocky810: "{{ foreman_ccv_allow_promote_rocky8 | bool }}"
+# foreman_ccv_auto_publish_rocky810: "{{ foreman_ccv_auto_publish_rocky8 | bool }}"
+
+# foreman_cv_allow_promote_rocky8_sig_core: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_cv_allow_promote_rocky8_sig_core_common: "{{ foreman_cv_allow_promote_rocky8_sig_core | bool }}"
+# foreman_cv_allow_promote_rocky8_sig_core_infra: "{{ foreman_cv_allow_promote_rocky8_sig_core | bool }}"
+
+# foreman_cv_allow_promote_rocky8_sig_cloud: "{{ foreman_cv_allow_promote_rocky8 | bool }}"
+# foreman_cv_allow_promote_rocky8_sig_cloud_common: "{{ foreman_cv_allow_promote_rocky8_sig_cloud | bool }}"
+# foreman_cv_allow_promote_rocky8_sig_cloud_kernel: "{{ foreman_cv_allow_promote_rocky8_sig_cloud | bool }}"
+
+### ROCKY 9
+
+# foreman_cv_allow_promote_rocky9: "{{ foreman_cv_allow_promote_rocky | bool }}"
+# foreman_ccv_allow_promote_rocky9: "{{ foreman_ccv_allow_promote_rocky | bool }}"
+# foreman_ccv_auto_publish_rocky9: "{{ foreman_ccv_auto_publish_rocky | bool }}"
+
+# foreman_cv_allow_promote_rocky90: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_allow_promote_rocky90: "{{ foreman_ccv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_auto_publish_rocky90: "{{ foreman_ccv_auto_publish_rocky9 | bool }}"
+
+# foreman_cv_allow_promote_rocky91: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_allow_promote_rocky91: "{{ foreman_ccv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_auto_publish_rocky91: "{{ foreman_ccv_auto_publish_rocky9 | bool }}"
+
+# foreman_cv_allow_promote_rocky92: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_allow_promote_rocky92: "{{ foreman_ccv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_auto_publish_rocky92: "{{ foreman_ccv_auto_publish_rocky9 | bool }}"
+
+# foreman_cv_allow_promote_rocky93: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_allow_promote_rocky93: "{{ foreman_ccv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_auto_publish_rocky93: "{{ foreman_ccv_auto_publish_rocky9 | bool }}"
+
+# foreman_cv_allow_promote_rocky94: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_allow_promote_rocky94: "{{ foreman_ccv_allow_promote_rocky9 | bool }}"
+# foreman_ccv_auto_publish_rocky94: "{{ foreman_ccv_auto_publish_rocky9 | bool }}"
+
+# foreman_cv_allow_promote_rocky9_sig_core: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_cv_allow_promote_rocky9_sig_core_common: "{{ foreman_cv_allow_promote_rocky9_sig_core | bool }}"
+# foreman_cv_allow_promote_rocky9_sig_core_infra: "{{ foreman_cv_allow_promote_rocky9_sig_core | bool }}"
+
+# foreman_cv_allow_promote_rocky9_sig_cloud: "{{ foreman_cv_allow_promote_rocky9 | bool }}"
+# foreman_cv_allow_promote_rocky9_sig_cloud_common: "{{ foreman_cv_allow_promote_rocky9_sig_cloud | bool }}"
+# foreman_cv_allow_promote_rocky9_sig_cloud_kernel: "{{ foreman_cv_allow_promote_rocky9_sig_cloud | bool }}"
+
+
+### UBUNTU
+
+# foreman_cv_allow_promote_ubuntu: "{{ foreman_cv_allow_promote | bool }}"
+# foreman_ccv_allow_promote_ubuntu: "{{ foreman_ccv_allow_promote | bool }}"
+# foreman_ccv_auto_publish_ubuntu: "{{ foreman_ccv_auto_publish | bool }}"
+
+# foreman_cv_allow_promote_ubuntu1804: "{{ foreman_cv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_allow_promote_ubuntu1804: "{{ foreman_ccv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_auto_publish_ubuntu1804: "{{ foreman_ccv_auto_publish_ubuntu | bool }}"
+
+# foreman_cv_allow_promote_ubuntu2004: "{{ foreman_cv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_allow_promote_ubuntu2004: "{{ foreman_ccv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_auto_publish_ubuntu2004: "{{ foreman_ccv_auto_publish_ubuntu | bool }}"
+
+# foreman_cv_allow_promote_ubuntu2204: "{{ foreman_cv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_allow_promote_ubuntu2204: "{{ foreman_ccv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_auto_publish_ubuntu2204: "{{ foreman_ccv_auto_publish_ubuntu | bool }}"
+
+# foreman_cv_allow_promote_ubuntu2404: "{{ foreman_cv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_allow_promote_ubuntu2404: "{{ foreman_ccv_allow_promote_ubuntu | bool }}"
+# foreman_ccv_auto_publish_ubuntu2404: "{{ foreman_ccv_auto_publish_ubuntu | bool }}"
+

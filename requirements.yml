@@ -1,0 +1,15 @@
+---
+
+collections:
+  - name: kangaroot.foreman
+    version: ">=1.4.0"
+
+  - name: theforeman.foreman
+    version: ">=4.0.0"
+  - name: theforeman.operations
+    version: ">=2.0.0"
+
+  # - name: redhat.satellite
+  #   version: ">=4.0.0"
+  # - name: redhat.satellite_operations
+  #   version: ">=2.0.0"

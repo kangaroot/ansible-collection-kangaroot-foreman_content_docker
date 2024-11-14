@@ -1,0 +1,36 @@
+---
+# tasks file for foreman_content_docker
+
+- name: "Vars | Include Docker content vars"
+  ansible.builtin.include_vars:
+    dir: vars
+    ignore_files:
+      - "main.yml"
+    extensions:
+      - "yml"
+    ignore_unknown_extensions: true
+
+- name: "Vars | Append Docker vars"
+  ansible.builtin.set_fact:
+    foreman_operatingsystems: "{{ foreman_operatingsystems | default([]) |
+      union( foreman_operatingsystems_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+    foreman_installation_media: "{{ foreman_installation_media | default([]) |
+      union( foreman_installation_media_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+    foreman_content_credentials: "{{ foreman_content_credentials | default([]) |
+      union( foreman_content_credentials_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+    foreman_products: "{{ foreman_products | default([]) |
+      union( foreman_products_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+    foreman_content_views: "{{ foreman_content_views | default([]) |
+      union( foreman_content_views_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+    foreman_activation_keys: "{{ foreman_activation_keys | default([]) |
+      union( foreman_activation_keys_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+    foreman_sync_plan_products: "{{ foreman_sync_plan_products | default([]) |
+      union( foreman_sync_plan_products_docker | default([]) if foreman_enable_docker | bool else [] )
+      }}"
+

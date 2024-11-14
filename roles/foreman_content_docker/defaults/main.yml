@@ -1,0 +1,140 @@
+---
+# noqa: var-naming[no-role-prefix]
+# defaults file for foreman_content_docker
+
+#######################################
+### URLS
+#######################################
+
+### DOCKER
+
+foreman_repo_baseurl_docker: https://download.docker.com/linux/centos
+
+foreman_repo_baseurl_docker_ce: "{{ foreman_repo_baseurl_docker }}"
+foreman_repo_baseurl_docker_ee: https://repos.mirantis.com
+
+
+#######################################
+### ENABLE VARS
+#######################################
+
+### DOCKER
+
+foreman_enable_docker: false
+
+foreman_enable_docker_ce: "{{ foreman_enable_docker | bool }}"
+
+foreman_enable_docker_ce_el7: false
+foreman_enable_docker_ce_el8: "{{ foreman_enable_docker_ce | bool }}"
+foreman_enable_docker_ce_el9: "{{ foreman_enable_docker_ce | bool }}"
+
+foreman_enable_docker_ee: false
+
+foreman_enable_docker_ee_el7: false
+foreman_enable_docker_ee_el8: false
+foreman_enable_docker_ee_el9: false
+
+
+#######################################
+### PRODUCT DEFAULTS
+#######################################
+
+### DOCKER
+
+foreman_products_defaults_download_policy_docker: "{{ foreman_products_defaults_download_policy }}"
+foreman_products_defaults_mirroring_policy_docker: mirror_content_only
+foreman_products_defaults_verify_ssl_on_sync_docker: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+foreman_products_defaults_http_proxy_policy_docker: "{{ foreman_products_defaults_http_proxy_policy }}"
+foreman_products_defaults_unprotected_docker: "{{ foreman_products_defaults_unprotected | bool }}"
+
+foreman_products_defaults_download_policy_docker_ce: "{{ foreman_products_defaults_download_policy_docker }}"
+foreman_products_defaults_mirroring_policy_docker_ce: "{{ foreman_products_defaults_mirroring_policy_docker }}"
+foreman_products_defaults_verify_ssl_on_sync_docker_ce: "{{ foreman_products_defaults_verify_ssl_on_sync_docker | bool }}"
+foreman_products_defaults_http_proxy_policy_docker_ce: "{{ foreman_products_defaults_http_proxy_policy_docker }}"
+foreman_products_defaults_unprotected_docker_ce: "{{ foreman_products_defaults_unprotected_docker | bool }}"
+
+foreman_products_defaults_download_policy_docker_ee: "{{ foreman_products_defaults_download_policy_docker }}"
+foreman_products_defaults_mirroring_policy_docker_ee: "{{ foreman_products_defaults_mirroring_policy_docker }}"
+foreman_products_defaults_verify_ssl_on_sync_docker_ee: "{{ foreman_products_defaults_verify_ssl_on_sync_docker | bool }}"
+foreman_products_defaults_http_proxy_policy_docker_ee: "{{ foreman_products_defaults_http_proxy_policy_docker }}"
+foreman_products_defaults_unprotected_docker_ee: "{{ foreman_products_defaults_unprotected_docker | bool }}"
+
+
+#######################################
+### ORGANIZATION VARS
+#######################################
+
+### DOCKER
+
+foreman_organization_docker: "{{ foreman_organization }}"
+
+foreman_organization_docker_ce: "{{ foreman_organization_docker }}"
+
+foreman_organization_docker_ce_el7: "{{ foreman_organization_docker_ce }}"
+foreman_organization_docker_ce_el8: "{{ foreman_organization_docker_ce }}"
+foreman_organization_docker_ce_el9: "{{ foreman_organization_docker_ce }}"
+
+foreman_organization_docker_ee: "{{ foreman_organization_docker }}"
+
+foreman_organization_docker_ee_el7: "{{ foreman_organization_docker_ee }}"
+foreman_organization_docker_ee_el8: "{{ foreman_organization_docker_ee }}"
+foreman_organization_docker_ee_el9: "{{ foreman_organization_docker_ee }}"
+
+
+#######################################
+### CONTENT VIEW DEFAULTS
+#######################################
+
+### DOCKER
+
+foreman_cv_allow_promote_docker: "{{ foreman_cv_allow_promote | bool }}"
+
+foreman_cv_allow_promote_docker_ce: "{{ foreman_cv_allow_promote_docker | bool }}"
+
+foreman_cv_allow_promote_docker_ce_el7: "{{ foreman_cv_allow_promote_docker_ce | bool }}"
+foreman_cv_allow_promote_docker_ce_el8: "{{ foreman_cv_allow_promote_docker_ce | bool }}"
+foreman_cv_allow_promote_docker_ce_el9: "{{ foreman_cv_allow_promote_docker_ce | bool }}"
+
+foreman_cv_allow_promote_docker_ee: "{{ foreman_cv_allow_promote_docker | bool }}"
+
+foreman_cv_allow_promote_docker_ee_el7: "{{ foreman_cv_allow_promote_docker_ee | bool }}"
+foreman_cv_allow_promote_docker_ee_el8: "{{ foreman_cv_allow_promote_docker_ee | bool }}"
+foreman_cv_allow_promote_docker_ee_el9: "{{ foreman_cv_allow_promote_docker_ee | bool }}"
+
+
+#######################################
+### CONTENT
+#######################################
+
+foreman_content_credentials_docker_main: []
+foreman_content_credentials_docker: "{{ ( foreman_content_credentials_docker_main | default([]) if foreman_enable_docker | bool else [] ) |
+  union( foreman_content_credentials_docker_ce | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_content_credentials_docker_ee | default([]) if foreman_enable_docker_ee | bool else [] )
+  }}"
+
+foreman_products_docker_main: []
+foreman_products_docker: "{{ ( foreman_products_docker_main | default([]) if foreman_enable_docker | bool else [] ) |
+  union( foreman_products_docker_ce | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_products_docker_ee | default([]) if foreman_enable_docker_ee | bool else [] )
+  }}"
+
+foreman_content_views_docker_main: []
+foreman_content_views_docker: "{{ ( foreman_content_views_docker_main | default([]) if foreman_enable_docker | bool else [] ) |
+  union( foreman_content_views_docker_ce | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_content_views_docker_ee | default([]) if foreman_enable_docker_ee | bool else [] )
+  }}"
+
+foreman_activation_keys_docker_main: []
+foreman_activation_keys_docker: "{{ ( foreman_activation_keys_docker_main | default([]) if foreman_enable_docker | bool else [] ) |
+  union( foreman_activation_keys_docker_ce | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_activation_keys_docker_ee | default([]) if foreman_enable_docker_ee | bool else [] )
+  }}"
+
+foreman_sync_plan_products_docker_main:
+  - "{{ foreman_product_name_prefix | default('') }}Docker"
+
+foreman_sync_plan_products_docker: "{{ ( foreman_sync_plan_products_docker_main | default([]) if foreman_enable_docker | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ce | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ee | default([]) if foreman_enable_docker_ee | bool else [] )
+  }}"
+

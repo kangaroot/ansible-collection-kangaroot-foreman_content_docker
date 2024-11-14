@@ -1,0 +1,1691 @@
+---
+
+#######################################
+### PRODUCT DEFAULTS
+#######################################
+
+# foreman_products_defaults_download_policy: on_demand
+# foreman_products_defaults_mirroring_policy: mirror_complete
+# foreman_products_defaults_verify_ssl_on_sync: false
+# foreman_products_defaults_http_proxy_policy: global_default_http_proxy
+# foreman_products_defaults_unprotected: false
+
+
+### ATIX
+
+# foreman_products_defaults_download_policy_atix: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_atix: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_atix: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_atix: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_atix: "{{ foreman_products_defaults_unprotected | bool }}"
+# foreman_products_defaults_deb_components_atix: main
+# foreman_products_defaults_deb_architectures_atix: "{{ foreman_products_defaults_deb_architectures }}"
+
+# foreman_products_defaults_download_policy_atix_debian: "{{ foreman_products_defaults_download_policy_atix }}"
+# foreman_products_defaults_download_policy_atix_ubuntu: "{{ foreman_products_defaults_download_policy_atix }}"
+# foreman_products_defaults_download_policy_atix_sles: "{{ foreman_products_defaults_download_policy_atix }}"
+
+# foreman_products_defaults_mirroring_policy_atix_debian: "{{ foreman_products_defaults_mirroring_policy_atix }}"
+# foreman_products_defaults_mirroring_policy_atix_ubuntu: "{{ foreman_products_defaults_mirroring_policy_atix }}"
+# foreman_products_defaults_mirroring_policy_atix_sles: "{{ foreman_products_defaults_mirroring_policy_atix }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_atix_debian: "{{ foreman_products_defaults_verify_ssl_on_sync_atix | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_atix_ubuntu: "{{ foreman_products_defaults_verify_ssl_on_sync_atix | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_atix_sles: "{{ foreman_products_defaults_verify_ssl_on_sync_atix | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_atix_debian: "{{ foreman_products_defaults_http_proxy_policy_atix }}"
+# foreman_products_defaults_http_proxy_policy_atix_ubuntu: "{{ foreman_products_defaults_http_proxy_policy_atix }}"
+# foreman_products_defaults_http_proxy_policy_atix_sles: "{{ foreman_products_defaults_http_proxy_policy_atix }}"
+
+# foreman_products_defaults_unprotected_atix_debian: "{{ foreman_products_defaults_unprotected_atix | bool }}"
+# foreman_products_defaults_unprotected_atix_ubuntu: "{{ foreman_products_defaults_unprotected_atix | bool }}"
+# foreman_products_defaults_unprotected_atix_sles: "{{ foreman_products_defaults_unprotected_atix | bool }}"
+
+# foreman_products_defaults_deb_components_atix_debian: "{{ foreman_products_defaults_deb_components_atix }}"
+# foreman_products_defaults_deb_components_atix_ubuntu: "{{ foreman_products_defaults_deb_components_atix }}"
+
+# foreman_products_defaults_deb_architectures_atix_debian: "{{ foreman_products_defaults_deb_architectures_atix }}"
+# foreman_products_defaults_deb_architectures_atix_ubuntu: "{{ foreman_products_defaults_deb_architectures_atix }}"
+
+
+### CENTOS
+
+# foreman_products_defaults_download_policy_centos: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_centos: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_centos: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_centos: "{{ foreman_products_defaults_unprotected | bool }}"
+
+### CENTOS 7
+
+# foreman_products_defaults_download_policy_centos7: immediate
+
+# foreman_products_defaults_download_policy_centos70: on_demand
+# foreman_products_defaults_download_policy_centos71: on_demand
+# foreman_products_defaults_download_policy_centos72: on_demand
+# foreman_products_defaults_download_policy_centos73: on_demand
+# foreman_products_defaults_download_policy_centos74: on_demand
+# foreman_products_defaults_download_policy_centos75: on_demand
+# foreman_products_defaults_download_policy_centos76: on_demand
+# foreman_products_defaults_download_policy_centos77: on_demand
+# foreman_products_defaults_download_policy_centos78: on_demand
+# foreman_products_defaults_download_policy_centos79: on_demand
+
+# foreman_products_defaults_download_policy_centos7_dotnet: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_sclo: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_opstools: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_nfv: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_configmanagement: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_paas: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_cloud: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_virtualization: "{{ foreman_products_defaults_download_policy_centos7 }}"
+# foreman_products_defaults_download_policy_centos7_sig_storage: "{{ foreman_products_defaults_download_policy_centos7 }}"
+
+# foreman_products_defaults_mirroring_policy_centos7: "{{ foreman_products_defaults_mirroring_policy_centos }}"
+
+# foreman_products_defaults_mirroring_policy_centos70: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos71: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos72: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos73: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos74: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos75: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos76: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos77: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos78: mirror_content_only
+# foreman_products_defaults_mirroring_policy_centos79: mirror_content_only
+
+# foreman_products_defaults_mirroring_policy_centos7_dotnet: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_sclo: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_opstools: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_nfv: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_configmanagement: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_paas: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_cloud: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_virtualization: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+# foreman_products_defaults_mirroring_policy_centos7_sig_storage: "{{ foreman_products_defaults_mirroring_policy_centos7 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos7: "{{ foreman_products_defaults_verify_ssl_on_sync_centos | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos70: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos71: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos72: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos73: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos74: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos75: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos76: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos77: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos78: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos79: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos7_dotnet: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_sclo: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_opstools: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_nfv: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_configmanagement: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_paas: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos7_sig_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_centos7 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_centos7: "{{ foreman_products_defaults_http_proxy_policy_centos }}"
+
+# foreman_products_defaults_http_proxy_policy_centos70: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos71: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos72: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos73: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos74: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos75: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos76: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos77: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos78: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos79: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+
+# foreman_products_defaults_http_proxy_policy_centos7_dotnet: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_sclo: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_opstools: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_nfv: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_configmanagement: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_paas: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_cloud: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_virtualization: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+# foreman_products_defaults_http_proxy_policy_centos7_sig_storage: "{{ foreman_products_defaults_http_proxy_policy_centos7 }}"
+
+# foreman_products_defaults_unprotected_centos7: "{{ foreman_products_defaults_unprotected_centos | bool }}"
+
+# foreman_products_defaults_unprotected_centos70: true
+# foreman_products_defaults_unprotected_centos71: true
+# foreman_products_defaults_unprotected_centos72: true
+# foreman_products_defaults_unprotected_centos73: true
+# foreman_products_defaults_unprotected_centos74: true
+# foreman_products_defaults_unprotected_centos75: true
+# foreman_products_defaults_unprotected_centos76: true
+# foreman_products_defaults_unprotected_centos77: true
+# foreman_products_defaults_unprotected_centos78: true
+# foreman_products_defaults_unprotected_centos79: true
+
+# foreman_products_defaults_unprotected_centos7_dotnet: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_sclo: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_opstools: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_nfv: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_configmanagement: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_paas: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_cloud: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_virtualization: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+# foreman_products_defaults_unprotected_centos7_sig_storage: "{{ foreman_products_defaults_unprotected_centos7 | bool }}"
+
+### CENTOS 8
+
+# foreman_products_defaults_download_policy_centos8: "{{ foreman_products_defaults_download_policy_centos }}"
+
+# foreman_products_defaults_download_policy_centos80: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos81: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos82: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos83: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos84: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos85: "{{ foreman_products_defaults_download_policy_centos8 }}"
+
+# foreman_products_defaults_download_policy_centos8_sig_opstools: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_nfv: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_configmanagement: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_kmods: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_messaging: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_cloud: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_virtualization: "{{ foreman_products_defaults_download_policy_centos8 }}"
+# foreman_products_defaults_download_policy_centos8_sig_storage: "{{ foreman_products_defaults_download_policy_centos8 }}"
+
+# foreman_products_defaults_mirroring_policy_centos8: "{{ foreman_products_defaults_mirroring_policy_centos }}"
+
+# foreman_products_defaults_mirroring_policy_centos80: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos81: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos82: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos83: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos84: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos85: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+
+# foreman_products_defaults_mirroring_policy_centos8_sig_opstools: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_nfv: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_configmanagement: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_kmods: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_messaging: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_cloud: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_virtualization: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+# foreman_products_defaults_mirroring_policy_centos8_sig_storage: "{{ foreman_products_defaults_mirroring_policy_centos8 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos8: "{{ foreman_products_defaults_verify_ssl_on_sync_centos | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos80: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos81: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos82: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos83: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos84: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos85: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_opstools: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_nfv: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_configmanagement: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_kmods: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_messaging: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos8_sig_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_centos8 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_centos8: "{{ foreman_products_defaults_http_proxy_policy_centos }}"
+
+# foreman_products_defaults_http_proxy_policy_centos80: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos81: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos82: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos83: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos84: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos85: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+
+# foreman_products_defaults_http_proxy_policy_centos8_sig_opstools: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_nfv: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_configmanagement: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_kmods: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_messaging: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_cloud: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_virtualization: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+# foreman_products_defaults_http_proxy_policy_centos8_sig_storage: "{{ foreman_products_defaults_http_proxy_policy_centos8 }}"
+
+# foreman_products_defaults_unprotected_centos8: "{{ foreman_products_defaults_unprotected_centos | bool }}"
+
+# foreman_products_defaults_unprotected_centos80: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos81: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos82: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos83: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos84: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos85: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+
+# foreman_products_defaults_unprotected_centos8_sig_opstools: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_nfv: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_configmanagement: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_kmods: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_messaging: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_cloud: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_virtualization: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+# foreman_products_defaults_unprotected_centos8_sig_storage: "{{ foreman_products_defaults_unprotected_centos8 | bool }}"
+
+### CENTOS STREAM 8
+
+# foreman_products_defaults_download_policy_centos_stream8: "{{ foreman_products_defaults_download_policy_centos }}"
+
+# foreman_products_defaults_download_policy_centos_stream8_sig_opstools: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_plus: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_nfv: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_configmanagement: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_kmods: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_messaging: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_cloud: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_virtualization: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_storage: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+# foreman_products_defaults_download_policy_centos_stream8_sig_hyperscale: "{{ foreman_products_defaults_download_policy_centos_stream8 }}"
+
+# foreman_products_defaults_mirroring_policy_centos_stream8: "{{ foreman_products_defaults_mirroring_policy_centos }}"
+
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_opstools: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_plus: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_nfv: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_configmanagement: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_kmods: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_messaging: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_cloud: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_virtualization: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_storage: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream8_sig_hyperscale: "{{ foreman_products_defaults_mirroring_policy_centos_stream8 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8: "{{ foreman_products_defaults_verify_ssl_on_sync_centos | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_opstools: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_plus: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_nfv: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_configmanagement: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_kmods: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_messaging: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream8_sig_hyperscale: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream8 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_centos_stream8: "{{ foreman_products_defaults_http_proxy_policy_centos }}"
+
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_opstools: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_plus: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_nfv: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_configmanagement: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_kmods: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_messaging: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_cloud: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_virtualization: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_storage: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream8_sig_hyperscale: "{{ foreman_products_defaults_http_proxy_policy_centos_stream8 }}"
+
+# foreman_products_defaults_unprotected_centos_stream8: "{{ foreman_products_defaults_unprotected_centos | bool }}"
+
+# foreman_products_defaults_unprotected_centos_stream8_sig_opstools: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_plus: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_nfv: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_configmanagement: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_kmods: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_messaging: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_cloud: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_virtualization: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_storage: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream8_sig_hyperscale: "{{ foreman_products_defaults_unprotected_centos_stream8 | bool }}"
+
+### CENTOS STREAM 9
+
+# foreman_products_defaults_download_policy_centos_stream9: "{{ foreman_products_defaults_download_policy_centos }}"
+
+# foreman_products_defaults_download_policy_centos_stream9_sig_opstools: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_nfv: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_kmods: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_messaging: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_cloud: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_virtualization: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_storage: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+# foreman_products_defaults_download_policy_centos_stream9_sig_hyperscale: "{{ foreman_products_defaults_download_policy_centos_stream9 }}"
+
+# foreman_products_defaults_mirroring_policy_centos_stream9: "{{ foreman_products_defaults_mirroring_policy_centos }}"
+
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_opstools: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_nfv: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_kmods: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_messaging: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_cloud: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_virtualization: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_storage: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+# foreman_products_defaults_mirroring_policy_centos_stream9_sig_hyperscale: "{{ foreman_products_defaults_mirroring_policy_centos_stream9 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9: "{{ foreman_products_defaults_verify_ssl_on_sync_centos | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_opstools: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_nfv: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_kmods: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_messaging: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_centos_stream9_sig_hyperscale: "{{ foreman_products_defaults_verify_ssl_on_sync_centos_stream9 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_centos_stream9: "{{ foreman_products_defaults_http_proxy_policy_centos }}"
+
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_opstools: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_nfv: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_kmods: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_messaging: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_cloud: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_virtualization: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_storage: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+# foreman_products_defaults_http_proxy_policy_centos_stream9_sig_hyperscale: "{{ foreman_products_defaults_http_proxy_policy_centos_stream9 }}"
+
+# foreman_products_defaults_unprotected_centos_stream9: "{{ foreman_products_defaults_unprotected_centos | bool }}"
+
+# foreman_products_defaults_unprotected_centos_stream9_sig_opstools: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_nfv: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_kmods: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_messaging: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_cloud: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_virtualization: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_storage: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+# foreman_products_defaults_unprotected_centos_stream9_sig_hyperscale: "{{ foreman_products_defaults_unprotected_centos_stream9 | bool }}"
+
+
+### CEPH
+
+# foreman_products_defaults_download_policy_ceph: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_ceph: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_ceph: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_ceph: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_ceph: "{{ foreman_products_defaults_unprotected | bool }}"
+
+# foreman_products_defaults_download_policy_ceph_nautilus: "{{ foreman_products_defaults_download_policy_ceph }}"
+# foreman_products_defaults_download_policy_ceph_octopus: "{{ foreman_products_defaults_download_policy_ceph }}"
+# foreman_products_defaults_download_policy_ceph_pacific: "{{ foreman_products_defaults_download_policy_ceph }}"
+# foreman_products_defaults_download_policy_ceph_quincy: "{{ foreman_products_defaults_download_policy_ceph }}"
+# foreman_products_defaults_download_policy_ceph_reef: "{{ foreman_products_defaults_download_policy_ceph }}"
+# foreman_products_defaults_download_policy_ceph_squid: "{{ foreman_products_defaults_download_policy_ceph }}"
+# foreman_products_defaults_download_policy_ceph_docker: "{{ foreman_products_defaults_download_policy_ceph }}"
+
+# foreman_products_defaults_mirroring_policy_ceph_nautilus: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+# foreman_products_defaults_mirroring_policy_ceph_octopus: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+# foreman_products_defaults_mirroring_policy_ceph_pacific: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+# foreman_products_defaults_mirroring_policy_ceph_quincy: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+# foreman_products_defaults_mirroring_policy_ceph_reef: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+# foreman_products_defaults_mirroring_policy_ceph_squid: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+# foreman_products_defaults_mirroring_policy_ceph_docker: "{{ foreman_products_defaults_mirroring_policy_ceph }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ceph_nautilus: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ceph_octopus: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ceph_pacific: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ceph_quincy: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ceph_reef: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ceph_squid: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ceph_docker: "{{ foreman_products_defaults_verify_ssl_on_sync_ceph | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ceph_nautilus: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+# foreman_products_defaults_http_proxy_policy_ceph_octopus: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+# foreman_products_defaults_http_proxy_policy_ceph_pacific: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+# foreman_products_defaults_http_proxy_policy_ceph_quincy: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+# foreman_products_defaults_http_proxy_policy_ceph_reef: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+# foreman_products_defaults_http_proxy_policy_ceph_squid: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+# foreman_products_defaults_http_proxy_policy_ceph_docker: "{{ foreman_products_defaults_http_proxy_policy_ceph }}"
+
+# foreman_products_defaults_unprotected_ceph_nautilus: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+# foreman_products_defaults_unprotected_ceph_octopus: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+# foreman_products_defaults_unprotected_ceph_pacific: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+# foreman_products_defaults_unprotected_ceph_quincy: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+# foreman_products_defaults_unprotected_ceph_reef: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+# foreman_products_defaults_unprotected_ceph_squid: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+# foreman_products_defaults_unprotected_ceph_docker: "{{ foreman_products_defaults_unprotected_ceph | bool }}"
+
+
+### DATADOG
+
+# foreman_products_defaults_download_policy_datadog: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_datadog: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_datadog: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_datadog: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_datadog: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### DEBIAN
+
+# foreman_products_defaults_download_policy_debian: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_debian: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_debian: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_debian: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_debian: "{{ foreman_products_defaults_unprotected | bool }}"
+# foreman_products_defaults_deb_components_debian: "{{ foreman_products_defaults_deb_components }}"
+# foreman_products_defaults_deb_architectures_debian: "{{ foreman_products_defaults_deb_architectures }}"
+
+# foreman_products_defaults_download_policy_debian9: "{{ foreman_products_defaults_download_policy_debian }}"
+# foreman_products_defaults_mirroring_policy_debian9: "{{ foreman_products_defaults_mirroring_policy_debian }}"
+# foreman_products_defaults_verify_ssl_on_sync_debian9: "{{ foreman_products_defaults_verify_ssl_on_sync_debian | bool }}"
+# foreman_products_defaults_http_proxy_policy_debian9: "{{ foreman_products_defaults_http_proxy_policy_debian }}"
+# foreman_products_defaults_unprotected_debian9: "{{ foreman_products_defaults_unprotected_debian | bool }}"
+# foreman_products_defaults_deb_components_debian9: "{{ foreman_products_defaults_deb_components_debian }}"
+# foreman_products_defaults_deb_architectures_debian9: "{{ foreman_products_defaults_deb_architectures_debian }}"
+
+# foreman_products_defaults_download_policy_debian10: "{{ foreman_products_defaults_download_policy_debian }}"
+# foreman_products_defaults_mirroring_policy_debian10: "{{ foreman_products_defaults_mirroring_policy_debian }}"
+# foreman_products_defaults_verify_ssl_on_sync_debian10: "{{ foreman_products_defaults_verify_ssl_on_sync_debian | bool }}"
+# foreman_products_defaults_http_proxy_policy_debian10: "{{ foreman_products_defaults_http_proxy_policy_debian }}"
+# foreman_products_defaults_unprotected_debian10: "{{ foreman_products_defaults_unprotected_debian | bool }}"
+# foreman_products_defaults_deb_components_debian10: "{{ foreman_products_defaults_deb_components_debian }}"
+# foreman_products_defaults_deb_architectures_debian10: "{{ foreman_products_defaults_deb_architectures_debian }}"
+
+# foreman_products_defaults_download_policy_debian11: "{{ foreman_products_defaults_download_policy_debian }}"
+# foreman_products_defaults_mirroring_policy_debian11: "{{ foreman_products_defaults_mirroring_policy_debian }}"
+# foreman_products_defaults_verify_ssl_on_sync_debian11: "{{ foreman_products_defaults_verify_ssl_on_sync_debian | bool }}"
+# foreman_products_defaults_http_proxy_policy_debian11: "{{ foreman_products_defaults_http_proxy_policy_debian }}"
+# foreman_products_defaults_unprotected_debian11: "{{ foreman_products_defaults_unprotected_debian | bool }}"
+# foreman_products_defaults_deb_components_debian11: "{{ foreman_products_defaults_deb_components_debian }}"
+# foreman_products_defaults_deb_architectures_debian11: "{{ foreman_products_defaults_deb_architectures_debian }}"
+
+# foreman_products_defaults_download_policy_debian12: "{{ foreman_products_defaults_download_policy_debian }}"
+# foreman_products_defaults_mirroring_policy_debian12: "{{ foreman_products_defaults_mirroring_policy_debian }}"
+# foreman_products_defaults_verify_ssl_on_sync_debian12: "{{ foreman_products_defaults_verify_ssl_on_sync_debian | bool }}"
+# foreman_products_defaults_http_proxy_policy_debian12: "{{ foreman_products_defaults_http_proxy_policy_debian }}"
+# foreman_products_defaults_unprotected_debian12: "{{ foreman_products_defaults_unprotected_debian | bool }}"
+# foreman_products_defaults_deb_components_debian12: "{{ foreman_products_defaults_deb_components_debian }}"
+# foreman_products_defaults_deb_architectures_debian12: "{{ foreman_products_defaults_deb_architectures_debian }}"
+
+
+### DOCKER
+
+# foreman_products_defaults_download_policy_docker: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_docker: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_docker: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_docker: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_docker: "{{ foreman_products_defaults_unprotected | bool }}"
+
+# foreman_products_defaults_download_policy_docker_ce: "{{ foreman_products_defaults_download_policy_docker }}"
+# foreman_products_defaults_mirroring_policy_docker_ce: "{{ foreman_products_defaults_mirroring_policy_docker }}"
+# foreman_products_defaults_verify_ssl_on_sync_docker_ce: "{{ foreman_products_defaults_verify_ssl_on_sync_docker | bool }}"
+# foreman_products_defaults_http_proxy_policy_docker_ce: "{{ foreman_products_defaults_http_proxy_policy_docker }}"
+# foreman_products_defaults_unprotected_docker_ce: "{{ foreman_products_defaults_unprotected_docker | bool }}"
+
+# foreman_products_defaults_download_policy_docker_ee: "{{ foreman_products_defaults_download_policy_docker }}"
+# foreman_products_defaults_mirroring_policy_docker_ee: "{{ foreman_products_defaults_mirroring_policy_docker }}"
+# foreman_products_defaults_verify_ssl_on_sync_docker_ee: "{{ foreman_products_defaults_verify_ssl_on_sync_docker | bool }}"
+# foreman_products_defaults_http_proxy_policy_docker_ee: "{{ foreman_products_defaults_http_proxy_policy_docker }}"
+# foreman_products_defaults_unprotected_docker_ee: "{{ foreman_products_defaults_unprotected_docker | bool }}"
+
+
+### ELREPO
+
+# foreman_products_defaults_download_policy_elrepo: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_elrepo: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_elrepo: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_elrepo: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_elrepo: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### EPEL
+
+# foreman_products_defaults_download_policy_epel: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_epel: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_epel: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_epel: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_epel: "{{ foreman_products_defaults_unprotected | bool }}"
+
+# foreman_products_defaults_download_policy_epel_el7: immediate
+# foreman_products_defaults_mirroring_policy_epel_el7: "{{ foreman_products_defaults_mirroring_policy_epel }}"
+# foreman_products_defaults_verify_ssl_on_sync_epel_el7: "{{ foreman_products_defaults_verify_ssl_on_sync_epel | bool }}"
+# foreman_products_defaults_http_proxy_policy_epel_el7: "{{ foreman_products_defaults_http_proxy_policy_epel }}"
+# foreman_products_defaults_unprotected_epel_el7: "{{ foreman_products_defaults_unprotected_epel | bool }}"
+
+# foreman_products_defaults_download_policy_epel_el8: "{{ foreman_products_defaults_download_policy_epel }}"
+# foreman_products_defaults_mirroring_policy_epel_el8: "{{ foreman_products_defaults_mirroring_policy_epel }}"
+# foreman_products_defaults_verify_ssl_on_sync_epel_el8: "{{ foreman_products_defaults_verify_ssl_on_sync_epel | bool }}"
+# foreman_products_defaults_http_proxy_policy_epel_el8: "{{ foreman_products_defaults_http_proxy_policy_epel }}"
+# foreman_products_defaults_unprotected_epel_el8: "{{ foreman_products_defaults_unprotected_epel | bool }}"
+
+# foreman_products_defaults_download_policy_epel_el9: "{{ foreman_products_defaults_download_policy_epel }}"
+# foreman_products_defaults_mirroring_policy_epel_el9: "{{ foreman_products_defaults_mirroring_policy_epel }}"
+# foreman_products_defaults_verify_ssl_on_sync_epel_el9: "{{ foreman_products_defaults_verify_ssl_on_sync_epel | bool }}"
+# foreman_products_defaults_http_proxy_policy_epel_el9: "{{ foreman_products_defaults_http_proxy_policy_epel }}"
+# foreman_products_defaults_unprotected_epel_el9: "{{ foreman_products_defaults_unprotected_epel | bool }}"
+
+
+### FEDORA COPR
+
+# foreman_products_defaults_download_policy_fedora_copr: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_fedora_copr: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_fedora_copr: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_fedora_copr: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_fedora_copr: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### FOREMAN
+
+# foreman_products_defaults_download_policy_foreman: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_foreman: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_foreman: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_foreman: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_foreman: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### HASHICORP
+
+# foreman_products_defaults_download_policy_hashicorp: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_hashicorp: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_hashicorp: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_hashicorp: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_hashicorp: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### KUBERNETES
+
+# foreman_products_defaults_download_policy_kubernetes: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_kubernetes: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_kubernetes: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_kubernetes: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_kubernetes: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### MICROSOFT
+
+# foreman_products_defaults_download_policy_microsoft: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_microsoft: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_microsoft: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_microsoft: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_microsoft: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### NGINX
+
+# foreman_products_defaults_download_policy_nginx: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_nginx: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_nginx: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_nginx: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_nginx: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### ORACLE LINUX
+
+# foreman_products_defaults_download_policy_ol: mirror_content_only
+# foreman_products_defaults_mirroring_policy_ol: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_ol: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_ol: "{{ foreman_products_defaults_unprotected | bool }}"
+
+### ORACLE LINUX 5/6
+
+# foreman_products_defaults_download_policy_ol5: "{{ foreman_products_defaults_download_policy_ol }}"
+# foreman_products_defaults_mirroring_policy_ol5: "{{ foreman_products_defaults_mirroring_policy_ol }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol5: "{{ foreman_products_defaults_verify_ssl_on_sync_ol | bool }}"
+# foreman_products_defaults_http_proxy_policy_ol5: "{{ foreman_products_defaults_http_proxy_policy_ol }}"
+# foreman_products_defaults_unprotected_ol5: "{{ foreman_products_defaults_unprotected_ol | bool }}"
+
+# foreman_products_defaults_download_policy_ol6: "{{ foreman_products_defaults_download_policy_ol }}"
+# foreman_products_defaults_mirroring_policy_ol6: "{{ foreman_products_defaults_mirroring_policy_ol }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol6: "{{ foreman_products_defaults_verify_ssl_on_sync_ol | bool }}"
+# foreman_products_defaults_http_proxy_policy_ol6: "{{ foreman_products_defaults_http_proxy_policy_ol }}"
+# foreman_products_defaults_unprotected_ol6: "{{ foreman_products_defaults_unprotected_ol | bool }}"
+
+### ORACLE LINUX 7
+
+# foreman_products_defaults_download_policy_ol7: "{{ foreman_products_defaults_download_policy_ol }}"
+
+# foreman_products_defaults_download_policy_ol70: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol71: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol72: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol73: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol74: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol75: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol76: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol77: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol78: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol79: "{{ foreman_products_defaults_download_policy_ol7 }}"
+
+# foreman_products_defaults_download_policy_ol7_uek: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_leapp: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_instantclient: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_olcne: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_security_validation: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_mysql: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_cloud: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_virtualization: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_storage: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_developer: "{{ foreman_products_defaults_download_policy_ol7 }}"
+# foreman_products_defaults_download_policy_ol7_olm: "{{ foreman_products_defaults_download_policy_ol7 }}"
+
+# foreman_products_defaults_mirroring_policy_ol7: "{{ foreman_products_defaults_mirroring_policy_ol }}"
+
+# foreman_products_defaults_mirroring_policy_ol70: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol71: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol72: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol73: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol74: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol75: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol76: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol77: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol78: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol79: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+
+# foreman_products_defaults_mirroring_policy_ol7_uek: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_leapp: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_instantclient: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_olcne: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_security_validation: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_mysql: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_cloud: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_virtualization: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_storage: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_developer: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+# foreman_products_defaults_mirroring_policy_ol7_olm: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol7: "{{ foreman_products_defaults_verify_ssl_on_sync_ol | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol70: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol71: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol72: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol73: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol74: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol75: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol76: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol77: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol78: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol79: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uek: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_leapp: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_instantclient: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_olcne: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_security_validation: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_mysql: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_developer: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_olm: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ol7: "{{ foreman_products_defaults_http_proxy_policy_ol }}"
+
+# foreman_products_defaults_http_proxy_policy_ol70: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol71: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol72: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol73: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol74: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol75: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol76: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol77: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol78: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol79: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+
+# foreman_products_defaults_http_proxy_policy_ol7_uek: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_leapp: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_instantclient: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_olcne: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_security_validation: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_mysql: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_cloud: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_virtualization: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_storage: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_developer: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+# foreman_products_defaults_http_proxy_policy_ol7_olm: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+
+# foreman_products_defaults_unprotected_ol7: "{{ foreman_products_defaults_unprotected_ol | bool }}"
+
+# foreman_products_defaults_unprotected_ol70: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol71: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol72: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol73: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol74: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol75: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol76: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol77: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol78: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol79: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+# foreman_products_defaults_unprotected_ol7_uek: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_leapp: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_instantclient: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_olcne: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_security_validation: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_mysql: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_cloud: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_virtualization: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_storage: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_developer: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+# foreman_products_defaults_unprotected_ol7_olm: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+### ORACLE LINUX 8
+
+# foreman_products_defaults_download_policy_ol8: "{{ foreman_products_defaults_download_policy_ol }}"
+
+# foreman_products_defaults_download_policy_ol80: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol81: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol82: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol83: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol84: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol85: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol86: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol87: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol88: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol89: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol810: "{{ foreman_products_defaults_download_policy_ol8 }}"
+
+# foreman_products_defaults_download_policy_ol8_uek: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_instantclient: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_mysql: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_olm: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_am: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_olcne: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_virtualization: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_storage: "{{ foreman_products_defaults_download_policy_ol8 }}"
+# foreman_products_defaults_download_policy_ol8_security_validation: "{{ foreman_products_defaults_download_policy_ol8 }}"
+
+# foreman_products_defaults_mirroring_policy_ol8: "{{ foreman_products_defaults_mirroring_policy_ol }}"
+
+# foreman_products_defaults_mirroring_policy_ol80: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol81: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol82: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol83: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol84: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol85: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol86: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol87: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol88: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol89: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol810: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+
+# foreman_products_defaults_mirroring_policy_ol8_uek: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_instantclient: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_mysql: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_olm: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_am: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_olcne: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_virtualization: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_storage: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+# foreman_products_defaults_mirroring_policy_ol8_security_validation: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol8: "{{ foreman_products_defaults_verify_ssl_on_sync_ol | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol80: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol81: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol82: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol83: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol84: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol85: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol86: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol87: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol88: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol89: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol810: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uek: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_instantclient: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_mysql: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_olm: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_am: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_olcne: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_security_validation: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ol8: "{{ foreman_products_defaults_http_proxy_policy_ol }}"
+
+# foreman_products_defaults_http_proxy_policy_ol80: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol81: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol82: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol83: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol84: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol85: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol86: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol87: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol88: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol89: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol810: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+
+# foreman_products_defaults_http_proxy_policy_ol8_uek: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_instantclient: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_mysql: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_olm: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_am: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_olcne: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_virtualization: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_storage: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+# foreman_products_defaults_http_proxy_policy_ol8_security_validation: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+
+# foreman_products_defaults_unprotected_ol8: "{{ foreman_products_defaults_unprotected_ol | bool }}"
+
+# foreman_products_defaults_unprotected_ol80: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol81: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol82: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol83: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol84: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol85: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol86: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol87: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol88: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol89: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol810: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+
+# foreman_products_defaults_unprotected_ol8_uek: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_instantclient: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_mysql: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_olm: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_am: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_olcne: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_virtualization: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_storage: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+# foreman_products_defaults_unprotected_ol8_security_validation: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+
+### ORACLE LINUX 9
+
+# foreman_products_defaults_download_policy_ol9: "{{ foreman_products_defaults_download_policy_ol }}"
+
+# foreman_products_defaults_download_policy_ol90: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol91: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol92: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol93: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol94: "{{ foreman_products_defaults_download_policy_ol9 }}"
+
+# foreman_products_defaults_download_policy_ol9_uek: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_instantclient: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_mysql: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_olm: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_am: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_olcne: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_virtualization: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_storage: "{{ foreman_products_defaults_download_policy_ol9 }}"
+# foreman_products_defaults_download_policy_ol9_security_validation: "{{ foreman_products_defaults_download_policy_ol9 }}"
+
+# foreman_products_defaults_mirroring_policy_ol9: "{{ foreman_products_defaults_mirroring_policy_ol }}"
+
+# foreman_products_defaults_mirroring_policy_ol90: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol91: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol92: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol93: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol94: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+
+# foreman_products_defaults_mirroring_policy_ol9_uek: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_instantclient: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_mysql: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_olm: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_am: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_olcne: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_virtualization: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_storage: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+# foreman_products_defaults_mirroring_policy_ol9_security_validation: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol9: "{{ foreman_products_defaults_verify_ssl_on_sync_ol | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol90: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol91: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol92: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol93: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol94: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uek: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_instantclient: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_mysql: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_olm: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_am: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_olcne: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_security_validation: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ol9: "{{ foreman_products_defaults_http_proxy_policy_ol }}"
+
+# foreman_products_defaults_http_proxy_policy_ol90: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol91: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol92: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol93: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol94: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+
+# foreman_products_defaults_http_proxy_policy_ol9_uek: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_instantclient: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_mysql: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_olm: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_am: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_olcne: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_virtualization: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_storage: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+# foreman_products_defaults_http_proxy_policy_ol9_security_validation: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+
+# foreman_products_defaults_unprotected_ol9: "{{ foreman_products_defaults_unprotected_ol | bool }}"
+
+# foreman_products_defaults_unprotected_ol90: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol91: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol92: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol93: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol94: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+
+# foreman_products_defaults_unprotected_ol9_uek: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_instantclient: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_mysql: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_olm: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_am: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_olcne: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_virtualization: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_storage: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+# foreman_products_defaults_unprotected_ol9_security_validation: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+
+
+### ORACLE LINUX ULN
+
+# foreman_products_defaults_download_policy_ol_uln: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_ol_uln: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol_uln: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_ol_uln: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_ol_uln: "{{ foreman_products_defaults_unprotected | bool }}"
+
+### ORACLE LINUX 5/6 ULN
+
+# foreman_products_defaults_download_policy_ol5_uln: "{{ foreman_products_defaults_download_policy_ol_uln }}"
+# foreman_products_defaults_mirroring_policy_ol5_uln: "{{ foreman_products_defaults_mirroring_policy_ol_uln }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol5_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol_uln | bool }}"
+# foreman_products_defaults_http_proxy_policy_ol5_uln: "{{ foreman_products_defaults_http_proxy_policy_ol_uln }}"
+# foreman_products_defaults_unprotected_ol5_uln: "{{ foreman_products_defaults_unprotected_ol_uln | bool }}"
+
+# foreman_products_defaults_download_policy_ol6_uln: "{{ foreman_products_defaults_download_policy_ol_uln }}"
+# foreman_products_defaults_mirroring_policy_ol6_uln: "{{ foreman_products_defaults_mirroring_policy_ol_uln }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol6_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol_uln | bool }}"
+# foreman_products_defaults_http_proxy_policy_ol6_uln: "{{ foreman_products_defaults_http_proxy_policy_ol_uln }}"
+# foreman_products_defaults_unprotected_ol6_uln: "{{ foreman_products_defaults_unprotected_ol_uln | bool }}"
+
+### ORACLE LINUX 7 ULN
+
+# foreman_products_defaults_download_policy_ol7_uln: "{{ foreman_products_defaults_download_policy_ol_uln }}"
+
+# foreman_products_defaults_download_policy_ol70_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol71_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol72_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol73_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol74_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol75_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol76_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol77_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol78_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol79_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+
+# foreman_products_defaults_download_policy_ol70_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol71_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol72_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol73_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol74_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol75_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol76_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol77_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol78_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol79_patch_uln: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+
+# foreman_products_defaults_download_policy_ol7_uln_uek: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_ksplice: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_sap: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_leapp: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_instantclient: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_olcne: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_security_validation: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_mysql: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_cloud: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_virtualization: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_storage: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_developer: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_olm: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+# foreman_products_defaults_download_policy_ol7_uln_exadata: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol7_uln: "{{ foreman_products_defaults_mirroring_policy_ol_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol70_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol71_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol72_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol73_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol74_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol75_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol76_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol77_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol78_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol79_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol70_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol71_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol72_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol73_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol74_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol75_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol76_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol77_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol78_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol79_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol7_uln_uek: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_ksplice: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_sap: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_leapp: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_instantclient: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_olcne: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_security_validation: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_mysql: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_cloud: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_virtualization: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_storage: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_developer: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_olm: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+# foreman_products_defaults_mirroring_policy_ol7_uln_exadata: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol70_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol71_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol72_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol73_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol74_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol75_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol76_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol77_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol78_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol79_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol70_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol71_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol72_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol73_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol74_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol75_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol76_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol77_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol78_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol79_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_uek: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_ksplice: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_sap: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_leapp: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_instantclient: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_olcne: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_security_validation: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_mysql: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_developer: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_olm: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol7_uln_exadata: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ol7_uln: "{{ foreman_products_defaults_http_proxy_policy_ol_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol70_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol71_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol72_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol73_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol74_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol75_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol76_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol77_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol78_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol79_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol70_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol71_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol72_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol73_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol74_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol75_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol76_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol77_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol78_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol79_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol7_uln_uek: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_ksplice: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_sap: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_leapp: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_instantclient: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_olcne: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_security_validation: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_mysql: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_cloud: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_virtualization: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_storage: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_developer: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_olm: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol7_uln_exadata: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+
+# foreman_products_defaults_unprotected_ol7_uln: "{{ foreman_products_defaults_unprotected_ol_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol70_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol71_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol72_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol73_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol74_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol75_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol76_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol77_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol78_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol79_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol70_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol71_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol72_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol73_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol74_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol75_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol76_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol77_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol78_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol79_patch_uln: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol7_uln_uek: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_ksplice: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_sap: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_leapp: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_instantclient: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_olcne: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_security_validation: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_mysql: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_cloud: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_virtualization: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_storage: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_developer: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_olm: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+# foreman_products_defaults_unprotected_ol7_uln_exadata: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+
+### ORACLE LINUX 8 ULN
+
+# foreman_products_defaults_download_policy_ol8_uln: "{{ foreman_products_defaults_download_policy_ol_uln }}"
+
+# foreman_products_defaults_download_policy_ol80_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol81_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol82_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol83_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol84_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol85_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol86_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol87_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol88_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol89_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol810_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+
+# foreman_products_defaults_download_policy_ol80_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol81_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol82_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol83_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol84_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol85_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol86_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol87_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol88_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol89_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol810_patch_uln: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+
+# foreman_products_defaults_download_policy_ol8_uln_uek: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_ksplice: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_instantclient: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_mysql: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_olm: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_am: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_olcne: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_virtualization: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_storage: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+# foreman_products_defaults_download_policy_ol8_uln_security_validation: "{{ foreman_products_defaults_download_policy_ol8_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol8_uln: "{{ foreman_products_defaults_mirroring_policy_ol_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol80_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol81_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol82_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol83_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol84_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol85_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol86_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol87_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol88_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol89_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol810_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol80_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol81_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol82_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol83_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol84_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol85_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol86_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol87_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol88_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol89_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol810_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol8_uln_uek: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_ksplice: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_instantclient: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_mysql: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_olm: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_am: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_olcne: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_virtualization: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_storage: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+# foreman_products_defaults_mirroring_policy_ol8_uln_security_validation: "{{ foreman_products_defaults_mirroring_policy_ol8_uln }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol80_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol81_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol82_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol83_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol84_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol85_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol86_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol87_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol88_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol89_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol810_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol80_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol81_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol82_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol83_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol84_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol85_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol86_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol87_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol88_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol89_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol810_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_uek: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_ksplice: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_instantclient: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_mysql: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_olm: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_am: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_olcne: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol8_uln_security_validation: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uln | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ol8_uln: "{{ foreman_products_defaults_http_proxy_policy_ol_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol80_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol81_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol82_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol83_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol84_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol85_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol86_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol87_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol88_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol89_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol810_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol80_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol81_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol82_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol83_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol84_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol85_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol86_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol87_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol88_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol89_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol810_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol8_uln_uek: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_ksplice: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_instantclient: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_mysql: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_olm: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_am: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_olcne: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_virtualization: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_storage: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol8_uln_security_validation: "{{ foreman_products_defaults_http_proxy_policy_ol8_uln }}"
+
+# foreman_products_defaults_unprotected_ol8_uln: "{{ foreman_products_defaults_unprotected_ol_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol80_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol81_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol82_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol83_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol84_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol85_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol86_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol87_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol88_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol89_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol810_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol80_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol81_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol82_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol83_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol84_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol85_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol86_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol87_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol88_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol89_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol810_patch_uln: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol8_uln_uek: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_ksplice: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_instantclient: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_mysql: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_olm: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_am: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_olcne: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_virtualization: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_storage: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+# foreman_products_defaults_unprotected_ol8_uln_security_validation: "{{ foreman_products_defaults_unprotected_ol8_uln | bool }}"
+
+### ORACLE LINUX 9 ULN
+
+# foreman_products_defaults_download_policy_ol9_uln: "{{ foreman_products_defaults_download_policy_ol_uln }}"
+
+# foreman_products_defaults_download_policy_ol90_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol91_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol92_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol93_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol94_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+
+# foreman_products_defaults_download_policy_ol90_patch_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol91_patch_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol92_patch_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol93_patch_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol94_patch_uln: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+
+# foreman_products_defaults_download_policy_ol9_uln_uek: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_ksplice: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_instantclient: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_mysql: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_olm: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_am: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_olcne: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_virtualization: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_storage: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_security_validation: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+# foreman_products_defaults_download_policy_ol9_uln_oci: "{{ foreman_products_defaults_download_policy_ol9_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol9_uln: "{{ foreman_products_defaults_mirroring_policy_ol_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol90_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol91_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol92_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol93_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol94_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol90_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol91_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol92_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol93_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol94_patch_uln: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+
+# foreman_products_defaults_mirroring_policy_ol9_uln_uek: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_ksplice: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_instantclient: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_mysql: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_olm: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_am: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_olcne: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_virtualization: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_storage: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_security_validation: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+# foreman_products_defaults_mirroring_policy_ol9_uln_oci: "{{ foreman_products_defaults_mirroring_policy_ol9_uln }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol90_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol91_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol92_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol93_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol94_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol90_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol91_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol92_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol93_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol94_patch_uln: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_uek: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_ksplice: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_instantclient: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_mysql: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_olm: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_am: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_olcne: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_virtualization: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_storage: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_security_validation: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_ol9_uln_oci: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_ol9_uln: "{{ foreman_products_defaults_http_proxy_policy_ol_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol90_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol91_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol92_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol93_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol94_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol90_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol91_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol92_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol93_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol94_patch_uln: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+
+# foreman_products_defaults_http_proxy_policy_ol9_uln_uek: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_ksplice: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_instantclient: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_mysql: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_olm: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_am: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_olcne: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_virtualization: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_storage: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_security_validation: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+# foreman_products_defaults_http_proxy_policy_ol9_uln_oci: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln }}"
+
+# foreman_products_defaults_unprotected_ol9_uln: "{{ foreman_products_defaults_unprotected_ol_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol90_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol91_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol92_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol93_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol94_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol90_patch_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol91_patch_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol92_patch_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol93_patch_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol94_patch_uln: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+
+# foreman_products_defaults_unprotected_ol9_uln_uek: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_ksplice: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_instantclient: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_mysql: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_olm: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_am: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_olcne: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_virtualization: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_storage: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_security_validation: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+# foreman_products_defaults_unprotected_ol9_uln_oci: "{{ foreman_products_defaults_unprotected_ol9_uln | bool }}"
+
+
+### REMI
+
+# foreman_products_defaults_download_policy_remi: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_remi: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_remi: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_remi: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_remi: "{{ foreman_products_defaults_unprotected | bool }}"
+
+
+### ROCKY
+
+# foreman_products_defaults_download_policy_rocky: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_rocky: "{{ foreman_products_defaults_mirroring_policy }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_rocky: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_rocky: "{{ foreman_products_defaults_unprotected | bool }}"
+
+### ROCKY 8
+
+# foreman_products_defaults_download_policy_rocky8: "{{ foreman_products_defaults_download_policy_rocky }}"
+
+# foreman_products_defaults_download_policy_rocky84: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky85: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky86: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky87: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky88: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky89: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky810: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+
+# foreman_products_defaults_download_policy_rocky8_sig_core: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+# foreman_products_defaults_download_policy_rocky8_sig_cloud: "{{ foreman_products_defaults_download_policy_rocky8 }}"
+
+# foreman_products_defaults_mirroring_policy_rocky8: "{{ foreman_products_defaults_mirroring_policy_rocky }}"
+
+# foreman_products_defaults_mirroring_policy_rocky84: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky85: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky86: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky87: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky88: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky89: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky810: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+
+# foreman_products_defaults_mirroring_policy_rocky8_sig_core: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+# foreman_products_defaults_mirroring_policy_rocky8_sig_cloud: "{{ foreman_products_defaults_mirroring_policy_rocky8 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_rocky8: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_rocky84: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky85: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky86: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky87: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky88: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky89: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky810: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_rocky8_sig_core: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky8_sig_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky8 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_rocky8: "{{ foreman_products_defaults_http_proxy_policy_rocky }}"
+
+# foreman_products_defaults_http_proxy_policy_rocky84: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky85: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky86: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky87: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky88: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky89: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky810: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+
+# foreman_products_defaults_http_proxy_policy_rocky8_sig_core: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+# foreman_products_defaults_http_proxy_policy_rocky8_sig_cloud: "{{ foreman_products_defaults_http_proxy_policy_rocky8 }}"
+
+# foreman_products_defaults_unprotected_rocky8: "{{ foreman_products_defaults_unprotected_rocky | bool }}"
+
+# foreman_products_defaults_unprotected_rocky84: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky85: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky86: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky87: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky88: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky89: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky810: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+
+# foreman_products_defaults_unprotected_rocky8_sig_core: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+# foreman_products_defaults_unprotected_rocky8_sig_cloud: "{{ foreman_products_defaults_unprotected_rocky8 | bool }}"
+
+### ROCKY 9
+
+# foreman_products_defaults_download_policy_rocky9: "{{ foreman_products_defaults_download_policy_rocky }}"
+
+# foreman_products_defaults_download_policy_rocky90: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+# foreman_products_defaults_download_policy_rocky91: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+# foreman_products_defaults_download_policy_rocky92: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+# foreman_products_defaults_download_policy_rocky93: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+# foreman_products_defaults_download_policy_rocky94: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+
+# foreman_products_defaults_download_policy_rocky9_sig_core: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+# foreman_products_defaults_download_policy_rocky9_sig_cloud: "{{ foreman_products_defaults_download_policy_rocky9 }}"
+
+# foreman_products_defaults_mirroring_policy_rocky9: "{{ foreman_products_defaults_mirroring_policy_rocky }}"
+
+# foreman_products_defaults_mirroring_policy_rocky90: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+# foreman_products_defaults_mirroring_policy_rocky91: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+# foreman_products_defaults_mirroring_policy_rocky92: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+# foreman_products_defaults_mirroring_policy_rocky93: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+# foreman_products_defaults_mirroring_policy_rocky94: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+
+# foreman_products_defaults_mirroring_policy_rocky9_sig_core: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+# foreman_products_defaults_mirroring_policy_rocky9_sig_cloud: "{{ foreman_products_defaults_mirroring_policy_rocky9 }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_rocky9: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_rocky90: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky91: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky92: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky93: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky94: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+
+# foreman_products_defaults_verify_ssl_on_sync_rocky9_sig_core: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+# foreman_products_defaults_verify_ssl_on_sync_rocky9_sig_cloud: "{{ foreman_products_defaults_verify_ssl_on_sync_rocky9 | bool }}"
+
+# foreman_products_defaults_http_proxy_policy_rocky9: "{{ foreman_products_defaults_http_proxy_policy_rocky }}"
+
+# foreman_products_defaults_http_proxy_policy_rocky90: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+# foreman_products_defaults_http_proxy_policy_rocky91: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+# foreman_products_defaults_http_proxy_policy_rocky92: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+# foreman_products_defaults_http_proxy_policy_rocky93: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+# foreman_products_defaults_http_proxy_policy_rocky94: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+
+# foreman_products_defaults_http_proxy_policy_rocky9_sig_core: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+# foreman_products_defaults_http_proxy_policy_rocky9_sig_cloud: "{{ foreman_products_defaults_http_proxy_policy_rocky9 }}"
+
+# foreman_products_defaults_unprotected_rocky9: "{{ foreman_products_defaults_unprotected_rocky | bool }}"
+
+# foreman_products_defaults_unprotected_rocky90: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+# foreman_products_defaults_unprotected_rocky91: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+# foreman_products_defaults_unprotected_rocky92: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+# foreman_products_defaults_unprotected_rocky93: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+# foreman_products_defaults_unprotected_rocky94: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+
+# foreman_products_defaults_unprotected_rocky9_sig_core: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+# foreman_products_defaults_unprotected_rocky9_sig_cloud: "{{ foreman_products_defaults_unprotected_rocky9 | bool }}"
+
+
+### UBUNTU
+
+# foreman_products_defaults_download_policy_ubuntu: "{{ foreman_products_defaults_download_policy }}"
+# foreman_products_defaults_mirroring_policy_ubuntu: mirror_content_only
+# foreman_products_defaults_verify_ssl_on_sync_ubuntu: "{{ foreman_products_defaults_verify_ssl_on_sync | bool }}"
+# foreman_products_defaults_http_proxy_policy_ubuntu: "{{ foreman_products_defaults_http_proxy_policy }}"
+# foreman_products_defaults_unprotected_ubuntu: "{{ foreman_products_defaults_unprotected | bool }}"
+# foreman_products_defaults_deb_components_ubuntu: main restricted
+# foreman_products_defaults_deb_architectures_ubuntu: "{{ foreman_products_defaults_deb_architectures }}"
+
+# foreman_products_defaults_download_policy_ubuntu1804: "{{ foreman_products_defaults_download_policy_ubuntu }}"
+# foreman_products_defaults_mirroring_policy_ubuntu1804: "{{ foreman_products_defaults_mirroring_policy_ubuntu }}"
+# foreman_products_defaults_verify_ssl_on_sync_ubuntu1804: "{{ foreman_products_defaults_verify_ssl_on_sync_ubuntu | bool }}"
+# foreman_products_defaults_http_proxy_policy_ubuntu1804: "{{ foreman_products_defaults_http_proxy_policy_ubuntu }}"
+# foreman_products_defaults_unprotected_ubuntu1804: "{{ foreman_products_defaults_unprotected_ubuntu | bool }}"
+# foreman_products_defaults_deb_components_ubuntu1804: "{{ foreman_products_defaults_deb_components_ubuntu }}"
+# foreman_products_defaults_deb_architectures_ubuntu1804: "{{ foreman_products_defaults_deb_architectures_ubuntu }}"
+
+# foreman_products_defaults_download_policy_ubuntu2004: "{{ foreman_products_defaults_download_policy_ubuntu }}"
+# foreman_products_defaults_mirroring_policy_ubuntu2004: "{{ foreman_products_defaults_mirroring_policy_ubuntu }}"
+# foreman_products_defaults_verify_ssl_on_sync_ubuntu2004: "{{ foreman_products_defaults_verify_ssl_on_sync_ubuntu | bool }}"
+# foreman_products_defaults_http_proxy_policy_ubuntu2004: "{{ foreman_products_defaults_http_proxy_policy_ubuntu }}"
+# foreman_products_defaults_unprotected_ubuntu2004: "{{ foreman_products_defaults_unprotected_ubuntu | bool }}"
+# foreman_products_defaults_deb_components_ubuntu2004: "{{ foreman_products_defaults_deb_components_ubuntu }}"
+# foreman_products_defaults_deb_architectures_ubuntu2004: "{{ foreman_products_defaults_deb_architectures_ubuntu }}"
+
+# foreman_products_defaults_download_policy_ubuntu2204: "{{ foreman_products_defaults_download_policy_ubuntu }}"
+# foreman_products_defaults_mirroring_policy_ubuntu2204: "{{ foreman_products_defaults_mirroring_policy_ubuntu }}"
+# foreman_products_defaults_verify_ssl_on_sync_ubuntu2204: "{{ foreman_products_defaults_verify_ssl_on_sync_ubuntu | bool }}"
+# foreman_products_defaults_http_proxy_policy_ubuntu2204: "{{ foreman_products_defaults_http_proxy_policy_ubuntu }}"
+# foreman_products_defaults_unprotected_ubuntu2204: "{{ foreman_products_defaults_unprotected_ubuntu | bool }}"
+# foreman_products_defaults_deb_components_ubuntu2204: "{{ foreman_products_defaults_deb_components_ubuntu }}"
+# foreman_products_defaults_deb_architectures_ubuntu2204: "{{ foreman_products_defaults_deb_architectures_ubuntu }}"
+
+# foreman_products_defaults_download_policy_ubuntu2404: "{{ foreman_products_defaults_download_policy_ubuntu }}"
+# foreman_products_defaults_mirroring_policy_ubuntu2404: "{{ foreman_products_defaults_mirroring_policy_ubuntu }}"
+# foreman_products_defaults_verify_ssl_on_sync_ubuntu2404: "{{ foreman_products_defaults_verify_ssl_on_sync_ubuntu | bool }}"
+# foreman_products_defaults_http_proxy_policy_ubuntu2404: "{{ foreman_products_defaults_http_proxy_policy_ubuntu }}"
+# foreman_products_defaults_unprotected_ubuntu2404: "{{ foreman_products_defaults_unprotected_ubuntu | bool }}"
+# foreman_products_defaults_deb_components_ubuntu2404: "{{ foreman_products_defaults_deb_components_ubuntu }}"
+# foreman_products_defaults_deb_architectures_ubuntu2404: "{{ foreman_products_defaults_deb_architectures_ubuntu }}"
+

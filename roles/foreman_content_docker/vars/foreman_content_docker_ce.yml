@@ -1,0 +1,127 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_content_credentials_docker_ce_main:
+  - name: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-docker-ce"
+    content_type: gpg_key
+    content: "{{ lookup('ansible.builtin.url', foreman_repo_baseurl_docker_ce ~ '/gpg', split_lines=False, validate_certs=False) }}"
+    # content: "{{ lookup('ansible.builtin.file', role_path ~ '/files/RPM-GPG-KEY-docker-ce') }}"
+
+foreman_content_credentials_docker_ce: "{{ ( foreman_content_credentials_docker_ce_main | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_content_credentials_docker_ce_el7 | default([]) if foreman_enable_docker_ce_el7 | bool else [] ) |
+  union( foreman_content_credentials_docker_ce_el8 | default([]) if foreman_enable_docker_ce_el8 | bool else [] ) |
+  union( foreman_content_credentials_docker_ce_el9 | default([]) if foreman_enable_docker_ce_el9 | bool else [] )
+  }}"
+
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-docker-ee"
+  download_policy: "{{ foreman_products_defaults_download_policy_docker }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_docker }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_docker | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_docker }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_docker | bool }}"
+
+foreman_products_defaults_docker_ce: &foreman_products_defaults_docker_ce
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_docker_ce }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_docker_ce }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_docker_ce | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_docker_ce }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_docker_ce | bool }}"
+
+
+foreman_products_docker_ce_el7:
+  - name: "{{ foreman_product_name_prefix | default('') }}Docker"
+    label: "{{ foreman_product_label_prefix | default('') }}Docker"
+    organization: "{{ foreman_organization_docker_ce_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker CE Stable - x86_64 - EL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ce-stable-el7"
+        <<: *foreman_products_defaults_docker_ce
+        url: "{{ foreman_repo_baseurl_docker_ce }}/7/x86_64/stable"
+        organization: "{{ foreman_organization_docker_ce_el7 }}"
+
+foreman_products_docker_ce_el8:
+  - name: "{{ foreman_product_name_prefix | default('') }}Docker"
+    label: "{{ foreman_product_label_prefix | default('') }}Docker"
+    organization: "{{ foreman_organization_docker_ce_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker CE Stable - x86_64 - EL8"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ce-stable-el8"
+        <<: *foreman_products_defaults_docker_ce
+        url: "{{ foreman_repo_baseurl_docker_ce }}/8/x86_64/stable"
+        organization: "{{ foreman_organization_docker_ce_el8 }}"
+
+foreman_products_docker_ce_el9:
+  - name: "{{ foreman_product_name_prefix | default('') }}Docker"
+    label: "{{ foreman_product_label_prefix | default('') }}Docker"
+    organization: "{{ foreman_organization_docker_ce_el9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker CE Stable - x86_64 - EL9"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ce-stable-el9"
+        <<: *foreman_products_defaults_docker_ce
+        url: "{{ foreman_repo_baseurl_docker_ce }}/9/x86_64/stable"
+        organization: "{{ foreman_organization_docker_ce_el9 }}"
+
+foreman_products_docker_ce_main: []
+foreman_products_docker_ce: "{{ ( foreman_products_docker_ce_main | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_products_docker_ce_el7 | default([]) if foreman_enable_docker_ce_el7 | bool else [] ) |
+  union( foreman_products_docker_ce_el8 | default([]) if foreman_enable_docker_ce_el8 | bool else [] ) |
+  union( foreman_products_docker_ce_el9 | default([]) if foreman_enable_docker_ce_el9 | bool else [] )
+  }}"
+
+
+foreman_content_views_docker_ce_el7:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ce_stable_el7"
+    organization: "{{ foreman_organization_docker_ce_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker CE Stable - x86_64 - EL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ce_el7 }}"
+
+foreman_content_views_docker_ce_el8:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ce_stable_el8"
+    organization: "{{ foreman_organization_docker_ce_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker CE Stable - x86_64 - EL8"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ce_el8 }}"
+
+foreman_content_views_docker_ce_el9:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ce_stable_el9"
+    organization: "{{ foreman_organization_docker_ce_el9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker CE Stable - x86_64 - EL9"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ce_el9 }}"
+
+foreman_content_views_docker_ce_main: []
+foreman_content_views_docker_ce: "{{ ( foreman_content_views_docker_ce_main | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_content_views_docker_ce_el7 | default([]) if foreman_enable_docker_ce_el7 | bool else [] ) |
+  union( foreman_content_views_docker_ce_el8 | default([]) if foreman_enable_docker_ce_el8 | bool else [] ) |
+  union( foreman_content_views_docker_ce_el9 | default([]) if foreman_enable_docker_ce_el9 | bool else [] )
+  }}"
+
+
+foreman_activation_keys_docker_ce_main: []
+foreman_activation_keys_docker_ce: "{{ ( foreman_activation_keys_docker_ce_main | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_activation_keys_docker_ce_el7 | default([]) if foreman_enable_docker_ce_el7 | bool else [] ) |
+  union( foreman_activation_keys_docker_ce_el8 | default([]) if foreman_enable_docker_ce_el8 | bool else [] ) |
+  union( foreman_activation_keys_docker_ce_el9 | default([]) if foreman_enable_docker_ce_el9 | bool else [] )
+  }}"
+
+
+foreman_sync_plan_products_docker_ce_main: []
+foreman_sync_plan_products_docker_ce: "{{ ( foreman_sync_plan_products_docker_ce_main | default([]) if foreman_enable_docker_ce | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ce_el7 | default([]) if foreman_enable_docker_ce_el7 | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ce_el8 | default([]) if foreman_enable_docker_ce_el8 | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ce_el9 | default([]) if foreman_enable_docker_ce_el9 | bool else [] )
+  }}"
+

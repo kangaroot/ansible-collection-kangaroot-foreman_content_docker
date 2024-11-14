@@ -1,0 +1,1008 @@
+---
+
+#######################################
+### ORGANIZATION VARS
+#######################################
+
+### ATIX
+
+# foreman_organization_atix: "{{ foreman_organization }}"
+
+# foreman_organization_atix_debian: "{{ foreman_organization_atix }}"
+# foreman_organization_atix_debian11: "{{ foreman_organization_atix_debian }}"
+# foreman_organization_atix_debian12: "{{ foreman_organization_atix_debian }}"
+
+# foreman_organization_atix_ubuntu: "{{ foreman_organization_atix }}"
+# foreman_organization_atix_ubuntu2004: "{{ foreman_organization_atix_ubuntu }}"
+# foreman_organization_atix_ubuntu2204: "{{ foreman_organization_atix_ubuntu }}"
+# foreman_organization_atix_ubuntu2404: "{{ foreman_organization_atix_ubuntu }}"
+
+# foreman_organization_atix_sles: "{{ foreman_organization_atix }}"
+# foreman_organization_atix_sles12: "{{ foreman_organization_atix_sles }}"
+# foreman_organization_atix_sles15: "{{ foreman_organization_atix_sles }}"
+
+
+### CENTOS
+
+# foreman_organization_centos: "{{ foreman_organization }}"
+
+### CENTOS 7
+
+# foreman_organization_centos7: "{{ foreman_organization_centos }}"
+
+# foreman_organization_centos70: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos71: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos72: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos73: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos74: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos75: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos76: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos77: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos78: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos79: "{{ foreman_organization_centos7 }}"
+
+# foreman_organization_centos7_dotnet: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_sclo: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_opstools: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_nfv: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_nfv_common: "{{ foreman_organization_centos7_sig_nfv }}"
+# foreman_organization_centos7_sig_nfv_fdio: "{{ foreman_organization_centos7_sig_nfv }}"
+
+# foreman_organization_centos7_sig_configmanagement: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_configmanagement_ansible26: "{{ foreman_organization_centos7_sig_configmanagement }}"
+# foreman_organization_centos7_sig_configmanagement_ansible27: "{{ foreman_organization_centos7_sig_configmanagement }}"
+# foreman_organization_centos7_sig_configmanagement_ansible28: "{{ foreman_organization_centos7_sig_configmanagement }}"
+# foreman_organization_centos7_sig_configmanagement_ansible29: "{{ foreman_organization_centos7_sig_configmanagement }}"
+
+# foreman_organization_centos7_sig_paas: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_paas_openshift_origin: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin13: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin14: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin15: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin36: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin37: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin39: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin310: "{{ foreman_organization_centos7_sig_paas }}"
+# foreman_organization_centos7_sig_paas_openshift_origin311: "{{ foreman_organization_centos7_sig_paas }}"
+
+# foreman_organization_centos7_sig_cloud: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_cloud_openstack_queens: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_rocky: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_stein: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_train: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_queens_tested: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_rocky_tested: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_stein_tested: "{{ foreman_organization_centos7_sig_cloud }}"
+# foreman_organization_centos7_sig_cloud_openstack_train_tested: "{{ foreman_organization_centos7_sig_cloud }}"
+
+# foreman_organization_centos7_sig_virtualization: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_virtualization_azure: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_ovirt42: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_ovirt43: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_qemu_ev: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_46: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_48: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_410: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_412: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_413: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_414: "{{ foreman_organization_centos7_sig_virtualization }}"
+# foreman_organization_centos7_sig_virtualization_xen_epel: "{{ foreman_organization_centos7_sig_virtualization }}"
+
+# foreman_organization_centos7_sig_storage: "{{ foreman_organization_centos7 }}"
+# foreman_organization_centos7_sig_storage_samba411: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster40: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster41: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster5: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster6: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster7: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster8: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_gluster9: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_ceph_jewel: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_ceph_luminous: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_ceph_nautilus: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_nfs_ganesha28: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_nfs_ganesha30: "{{ foreman_organization_centos7_sig_storage }}"
+# foreman_organization_centos7_sig_storage_nfs_ganesha4: "{{ foreman_organization_centos7_sig_storage }}"
+
+### CENTOS 8
+
+# foreman_organization_centos8: "{{ foreman_organization_centos }}"
+
+# foreman_organization_centos80: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos81: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos82: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos83: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos84: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos85: "{{ foreman_organization_centos8 }}"
+
+# foreman_organization_centos8_sig_opstools: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_nfv: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_nfv_extras: "{{ foreman_organization_centos8_sig_nfv }}"
+# foreman_organization_centos8_sig_nfv_openvswitch: "{{ foreman_organization_centos8_sig_nfv }}"
+
+# foreman_organization_centos8_sig_configmanagement: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_configmanagement_ansible29: "{{ foreman_organization_centos8_sig_configmanagement }}"
+
+# foreman_organization_centos8_sig_kmods: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_kmods_main: "{{ foreman_organization_centos8_sig_kmods }}"
+# foreman_organization_centos8_sig_kmods_rebuild: "{{ foreman_organization_centos8_sig_kmods }}"
+
+# foreman_organization_centos8_sig_messaging: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_messaging_qpid_proton: "{{ foreman_organization_centos8_sig_messaging }}"
+# foreman_organization_centos8_sig_messaging_rabbitmq38: "{{ foreman_organization_centos8_sig_messaging }}"
+
+# foreman_organization_centos8_sig_cloud: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_cloud_openstack_train: "{{ foreman_organization_centos8_sig_cloud }}"
+# foreman_organization_centos8_sig_cloud_openstack_ussuri: "{{ foreman_organization_centos8_sig_cloud }}"
+# foreman_organization_centos8_sig_cloud_openstack_victoria: "{{ foreman_organization_centos8_sig_cloud }}"
+# foreman_organization_centos8_sig_cloud_openstack_train_tested: "{{ foreman_organization_centos8_sig_cloud }}"
+# foreman_organization_centos8_sig_cloud_openstack_ussuri_tested: "{{ foreman_organization_centos8_sig_cloud }}"
+# foreman_organization_centos8_sig_cloud_openstack_victoria_tested: "{{ foreman_organization_centos8_sig_cloud }}"
+
+# foreman_organization_centos8_sig_virtualization: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_virtualization_advanced_virtualization: "{{ foreman_organization_centos8_sig_virtualization }}"
+# foreman_organization_centos8_sig_virtualization_ovirt44: "{{ foreman_organization_centos8_sig_virtualization }}"
+# foreman_organization_centos8_sig_virtualization_ovirt45: "{{ foreman_organization_centos8_sig_virtualization }}"
+
+# foreman_organization_centos8_sig_storage: "{{ foreman_organization_centos8 }}"
+# foreman_organization_centos8_sig_storage_samba411: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_samba412: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_samba413: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_samba414: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_samba415: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_gluster6: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_gluster7: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_gluster8: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_gluster9: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_ceph_nautilus: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_ceph_octopus: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_ceph_pacific: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_nfs_ganesha28: "{{ foreman_organization_centos8_sig_storage }}"
+# foreman_organization_centos8_sig_storage_nfs_ganesha30: "{{ foreman_organization_centos8_sig_storage }}"
+
+### CENTOS STREAM 8
+
+# foreman_organization_centos_stream8: "{{ foreman_organization_centos }}"
+
+# foreman_organization_centos_stream8_sig_opstools: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_plus: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_nfv: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_nfv_extras: "{{ foreman_organization_centos_stream8_sig_nfv }}"
+# foreman_organization_centos_stream8_sig_nfv_openvswitch: "{{ foreman_organization_centos_stream8_sig_nfv }}"
+
+# foreman_organization_centos_stream8_sig_configmanagement: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_configmanagement_ansible29: "{{ foreman_organization_centos_stream8_sig_configmanagement }}"
+# foreman_organization_centos_stream8_sig_configmanagement_ansible5: "{{ foreman_organization_centos_stream8_sig_configmanagement }}"
+
+# foreman_organization_centos_stream8_sig_kmods: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_kmods_main: "{{ foreman_organization_centos_stream8_sig_kmods }}"
+# foreman_organization_centos_stream8_sig_kmods_rebuild: "{{ foreman_organization_centos_stream8_sig_kmods }}"
+# foreman_organization_centos_stream8_sig_kmods_userspace: "{{ foreman_organization_centos_stream8_sig_kmods }}"
+
+# foreman_organization_centos_stream8_sig_messaging: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_messaging_qpid_proton: "{{ foreman_organization_centos_stream8_sig_messaging }}"
+# foreman_organization_centos_stream8_sig_messaging_rabbitmq38: "{{ foreman_organization_centos_stream8_sig_messaging }}"
+
+# foreman_organization_centos_stream8_sig_cloud: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_cloud_openstack_train: "{{ foreman_organization_centos_stream8_sig_cloud }}"
+# foreman_organization_centos_stream8_sig_cloud_openstack_ussuri: "{{ foreman_organization_centos_stream8_sig_cloud }}"
+# foreman_organization_centos_stream8_sig_cloud_openstack_victoria: "{{ foreman_organization_centos_stream8_sig_cloud }}"
+# foreman_organization_centos_stream8_sig_cloud_openstack_train_tested: "{{ foreman_organization_centos_stream8_sig_cloud }}"
+# foreman_organization_centos_stream8_sig_cloud_openstack_ussuri_tested: "{{ foreman_organization_centos_stream8_sig_cloud }}"
+# foreman_organization_centos_stream8_sig_cloud_openstack_victoria_tested: "{{ foreman_organization_centos_stream8_sig_cloud }}"
+
+# foreman_organization_centos_stream8_sig_virtualization: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_virtualization_advanced_virtualization: "{{ foreman_organization_centos_stream8_sig_virtualization }}"
+# foreman_organization_centos_stream8_sig_virtualization_ovirt44: "{{ foreman_organization_centos_stream8_sig_virtualization }}"
+# foreman_organization_centos_stream8_sig_virtualization_ovirt45: "{{ foreman_organization_centos_stream8_sig_virtualization }}"
+
+# foreman_organization_centos_stream8_sig_storage: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_storage_samba411: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba412: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba413: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba414: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba415: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba416: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba417: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_samba418: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_gluster6: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_gluster7: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_gluster8: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_gluster9: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_gluster10: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_gluster11: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_ceph_nautilus: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_ceph_octopus: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_ceph_pacific: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_ceph_quincy: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_nfs_ganesha28: "{{ foreman_organization_centos_stream8_sig_storage }}"
+# foreman_organization_centos_stream8_sig_storage_nfs_ganesha30: "{{ foreman_organization_centos_stream8_sig_storage }}"
+
+# foreman_organization_centos_stream8_sig_hyperscale: "{{ foreman_organization_centos_stream8 }}"
+# foreman_organization_centos_stream8_sig_hyperscale_main: "{{ foreman_organization_centos_stream8_sig_hyperscale }}"
+# foreman_organization_centos_stream8_sig_hyperscale_hotfixes: "{{ foreman_organization_centos_stream8_sig_hyperscale }}"
+# foreman_organization_centos_stream8_sig_hyperscale_spin: "{{ foreman_organization_centos_stream8_sig_hyperscale }}"
+# foreman_organization_centos_stream8_sig_hyperscale_experimental: "{{ foreman_organization_centos_stream8_sig_hyperscale }}"
+
+### CENTOS STREAM 9
+
+# foreman_organization_centos_stream9: "{{ foreman_organization_centos }}"
+
+# foreman_organization_centos_stream9_sig_opstools: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_nfv: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_nfv_openvswitch: "{{ foreman_organization_centos_stream9_sig_nfv }}"
+
+# foreman_organization_centos_stream9_sig_kmods: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_kmods_main: "{{ foreman_organization_centos_stream9_sig_kmods }}"
+# foreman_organization_centos_stream9_sig_kmods_rebuild: "{{ foreman_organization_centos_stream9_sig_kmods }}"
+# foreman_organization_centos_stream9_sig_kmods_userspace: "{{ foreman_organization_centos_stream9_sig_kmods }}"
+
+# foreman_organization_centos_stream9_sig_messaging: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_messaging_rabbitmq38: "{{ foreman_organization_centos_stream9_sig_messaging }}"
+
+# foreman_organization_centos_stream9_sig_cloud: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_client_xena: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_yoga: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_zed: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_antelope: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_yoga_tested: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_zed_tested: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_openstack_antelope_tested: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_okd413: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+# foreman_organization_centos_stream9_sig_cloud_okd414: "{{ foreman_organization_centos_stream9_sig_cloud }}"
+
+# foreman_organization_centos_stream9_sig_virtualization: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_virtualization_ovirt45: "{{ foreman_organization_centos_stream9_sig_virtualization }}"
+
+# foreman_organization_centos_stream9_sig_storage: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_storage_common: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_samba414: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_samba415: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_samba416: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_samba417: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_samba418: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_gluster9: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_gluster10: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_gluster11: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_ceph_pacific: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_ceph_quincy: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_nfs_ganesha4: "{{ foreman_organization_centos_stream9_sig_storage }}"
+# foreman_organization_centos_stream9_sig_storage_nfs_ganesha5: "{{ foreman_organization_centos_stream9_sig_storage }}"
+
+# foreman_organization_centos_stream9_sig_hyperscale: "{{ foreman_organization_centos_stream9 }}"
+# foreman_organization_centos_stream9_sig_hyperscale_main: "{{ foreman_organization_centos_stream9_sig_hyperscale }}"
+# foreman_organization_centos_stream9_sig_hyperscale_spin: "{{ foreman_organization_centos_stream9_sig_hyperscale }}"
+# foreman_organization_centos_stream9_sig_hyperscale_experimental: "{{ foreman_organization_centos_stream9_sig_hyperscale }}"
+
+
+### CEPH
+
+# foreman_organization_ceph: "{{ foreman_organization }}"
+
+# foreman_organization_ceph_nautilus: "{{ foreman_organization_ceph }}"
+# foreman_organization_ceph_nautilus_el7: "{{ foreman_organization_ceph_nautilus }}"
+# foreman_organization_ceph_nautilus_el8: "{{ foreman_organization_ceph_nautilus }}"
+# foreman_organization_ceph_nautilus_deb9: "{{ foreman_organization_ceph_nautilus }}"
+# foreman_organization_ceph_nautilus_deb10: "{{ foreman_organization_ceph_nautilus }}"
+# foreman_organization_ceph_nautilus_ub1804: "{{ foreman_organization_ceph_nautilus }}"
+# foreman_organization_ceph_nautilus_ub2004: "{{ foreman_organization_ceph_nautilus }}"
+
+# foreman_organization_ceph_octopus: "{{ foreman_organization_ceph }}"
+# foreman_organization_ceph_octopus_el7: "{{ foreman_organization_ceph_octopus }}"
+# foreman_organization_ceph_octopus_el8: "{{ foreman_organization_ceph_octopus }}"
+# foreman_organization_ceph_octopus_deb10: "{{ foreman_organization_ceph_octopus }}"
+# foreman_organization_ceph_octopus_ub1804: "{{ foreman_organization_ceph_octopus }}"
+# foreman_organization_ceph_octopus_ub2004: "{{ foreman_organization_ceph_octopus }}"
+
+# foreman_organization_ceph_pacific: "{{ foreman_organization_ceph }}"
+# foreman_organization_ceph_pacific_el7: "{{ foreman_organization_ceph_pacific }}"
+# foreman_organization_ceph_pacific_el8: "{{ foreman_organization_ceph_pacific }}"
+# foreman_organization_ceph_pacific_el9: "{{ foreman_organization_ceph_pacific }}"
+# foreman_organization_ceph_pacific_deb10: "{{ foreman_organization_ceph_pacific }}"
+# foreman_organization_ceph_pacific_deb11: "{{ foreman_organization_ceph_pacific }}"
+# foreman_organization_ceph_pacific_ub1804: "{{ foreman_organization_ceph_pacific }}"
+# foreman_organization_ceph_pacific_ub2004: "{{ foreman_organization_ceph_pacific }}"
+
+# foreman_organization_ceph_quincy: "{{ foreman_organization_ceph }}"
+# foreman_organization_ceph_quincy_el7: "{{ foreman_organization_ceph_quincy }}"
+# foreman_organization_ceph_quincy_el8: "{{ foreman_organization_ceph_quincy }}"
+# foreman_organization_ceph_quincy_el9: "{{ foreman_organization_ceph_quincy }}"
+# foreman_organization_ceph_quincy_deb11: "{{ foreman_organization_ceph_quincy }}"
+# foreman_organization_ceph_quincy_ub2004: "{{ foreman_organization_ceph_quincy }}"
+
+# foreman_organization_ceph_reef: "{{ foreman_organization_ceph }}"
+# foreman_organization_ceph_reef_el8: "{{ foreman_organization_ceph_reef }}"
+# foreman_organization_ceph_reef_el9: "{{ foreman_organization_ceph_reef }}"
+# foreman_organization_ceph_reef_deb11: "{{ foreman_organization_ceph_reef }}"
+# foreman_organization_ceph_reef_ub2004: "{{ foreman_organization_ceph_reef }}"
+# foreman_organization_ceph_reef_ub2204: "{{ foreman_organization_ceph_reef }}"
+
+# foreman_organization_ceph_squid: "{{ foreman_organization_ceph }}"
+# foreman_organization_ceph_squid_el8: "{{ foreman_organization_ceph_squid }}"
+# foreman_organization_ceph_squid_el9: "{{ foreman_organization_ceph_squid }}"
+# foreman_organization_ceph_squid_deb11: "{{ foreman_organization_ceph_squid }}"
+# foreman_organization_ceph_squid_ub2204: "{{ foreman_organization_ceph_squid }}"
+
+# foreman_organization_ceph_docker: "{{ foreman_organization_ceph }}"
+
+
+### DATADOG
+
+# foreman_organization_datadog: "{{ foreman_organization }}"
+
+# foreman_organization_datadog_v6: "{{ foreman_organization_datadog }}"
+# foreman_organization_datadog_v7: "{{ foreman_organization_datadog }}"
+
+
+### DEBIAN
+
+# foreman_organization_debian: "{{ foreman_organization }}"
+
+# foreman_organization_debian9: "{{ foreman_organization_debian }}"
+# foreman_organization_debian10: "{{ foreman_organization_debian }}"
+# foreman_organization_debian11: "{{ foreman_organization_debian }}"
+# foreman_organization_debian12: "{{ foreman_organization_debian }}"
+
+
+### DOCKER
+
+# foreman_organization_docker: "{{ foreman_organization }}"
+
+# foreman_organization_docker_ce: "{{ foreman_organization_docker }}"
+
+# foreman_organization_docker_ce_el7: "{{ foreman_organization_docker_ce }}"
+# foreman_organization_docker_ce_el8: "{{ foreman_organization_docker_ce }}"
+# foreman_organization_docker_ce_el9: "{{ foreman_organization_docker_ce }}"
+
+# foreman_organization_docker_ee: "{{ foreman_organization_docker }}"
+
+# foreman_organization_docker_ee_el7: "{{ foreman_organization_docker_ee }}"
+# foreman_organization_docker_ee_el8: "{{ foreman_organization_docker_ee }}"
+# foreman_organization_docker_ee_el9: "{{ foreman_organization_docker_ee }}"
+
+
+### ELREPO
+
+# foreman_organization_elrepo: "{{ foreman_organization }}"
+
+# foreman_organization_elrepo_el7: "{{ foreman_organization_elrepo }}"
+# foreman_organization_elrepo_el8: "{{ foreman_organization_elrepo }}"
+# foreman_organization_elrepo_el9: "{{ foreman_organization_elrepo }}"
+
+
+### EPEL
+
+# foreman_organization_epel: "{{ foreman_organization }}"
+
+# foreman_organization_epel_el7: "{{ foreman_organization_epel }}"
+# foreman_organization_epel_el8: "{{ foreman_organization_epel }}"
+# foreman_organization_epel_el9: "{{ foreman_organization_epel }}"
+
+
+### FEDORA COPR
+
+# foreman_organization_fedora_copr: "{{ foreman_organization }}"
+
+# foreman_organization_fedora_copr_dgoodwin_subscription_manager: "{{ foreman_organization_fedora_copr }}"
+# foreman_organization_fedora_copr_dgoodwin_subscription_manager_ol6: "{{ foreman_organization_fedora_copr_dgoodwin_subscription_manager }}"
+# foreman_organization_fedora_copr_dgoodwin_subscription_manager_ol7: "{{ foreman_organization_fedora_copr_dgoodwin_subscription_manager }}"
+
+# foreman_organization_fedora_copr_dmann_subscription_manager: "{{ foreman_organization_fedora_copr }}"
+# foreman_organization_fedora_copr_dmann_subscription_manager_ol8: "{{ foreman_organization_fedora_copr_dmann_subscription_manager }}"
+
+
+### FOREMAN
+
+# foreman_organization_foreman: "{{ foreman_organization }}"
+
+# foreman_organization_foreman_el7: "{{ foreman_organization_foreman }}"
+# foreman_organization_foreman_el8: "{{ foreman_organization_foreman }}"
+# foreman_organization_foreman_el9: "{{ foreman_organization_foreman }}"
+
+
+### HASHICORP
+
+# foreman_organization_hashicorp: "{{ foreman_organization }}"
+
+# foreman_organization_hashicorp_el7: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_el8: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_el9: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_fedora37: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_fedora38: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_fedora39: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_debian9: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_debian10: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_debian11: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_debian12: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_ubuntu1804: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_ubuntu2004: "{{ foreman_organization_hashicorp }}"
+# foreman_organization_hashicorp_ubuntu2204: "{{ foreman_organization_hashicorp }}"
+
+
+### KUBERNETES
+
+# foreman_organization_kubernetes: "{{ foreman_organization }}"
+
+# foreman_organization_kubernetes_el7: "{{ foreman_organization_kubernetes }}"
+
+
+### MICROSOFT
+
+# foreman_organization_microsoft: "{{ foreman_organization }}"
+
+# foreman_organization_microsoft_azure_cli: "{{ foreman_organization_microsoft }}"
+
+# foreman_organization_microsoft_azure_cli_el: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_debian9: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_debian10: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_debian11: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_debian12: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_ubuntu1804: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_ubuntu2004: "{{ foreman_organization_microsoft_azure_cli }}"
+# foreman_organization_microsoft_azure_cli_ubuntu2204: "{{ foreman_organization_microsoft_azure_cli }}"
+
+# foreman_organization_microsoft_edge: "{{ foreman_organization_microsoft }}"
+
+# foreman_organization_microsoft_edge_el: "{{ foreman_organization_microsoft_edge }}"
+# foreman_organization_microsoft_edge_deb: "{{ foreman_organization_microsoft_edge }}"
+
+# foreman_organization_microsoft_vscode: "{{ foreman_organization_microsoft }}"
+
+# foreman_organization_microsoft_vscode_el: "{{ foreman_organization_microsoft_vscode }}"
+# foreman_organization_microsoft_vscode_deb: "{{ foreman_organization_microsoft_vscode }}"
+
+# foreman_organization_microsoft_prod: "{{ foreman_organization_microsoft }}"
+
+# foreman_organization_microsoft_prod_el7: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_el8: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_el9: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_fedora37: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_fedora38: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_fedora39: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_debian9: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_debian10: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_debian11: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_debian12: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_ubuntu1804: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_ubuntu2004: "{{ foreman_organization_microsoft_prod }}"
+# foreman_organization_microsoft_prod_ubuntu2204: "{{ foreman_organization_microsoft_prod }}"
+
+# foreman_organization_microsoft_mssql_server_2017: "{{ foreman_organization_microsoft }}"
+# foreman_organization_microsoft_mssql_server_2017_el7: "{{ foreman_organization_microsoft_mssql_server_2017 }}"
+# foreman_organization_microsoft_mssql_server_2017_el8: "{{ foreman_organization_microsoft_mssql_server_2017 }}"
+# foreman_organization_microsoft_mssql_server_2017_ubuntu1804: "{{ foreman_organization_microsoft_mssql_server_2017 }}"
+
+# foreman_organization_microsoft_mssql_server_2019: "{{ foreman_organization_microsoft }}"
+# foreman_organization_microsoft_mssql_server_2019_el7: "{{ foreman_organization_microsoft_mssql_server_2019 }}"
+# foreman_organization_microsoft_mssql_server_2019_el8: "{{ foreman_organization_microsoft_mssql_server_2019 }}"
+# foreman_organization_microsoft_mssql_server_2019_ubuntu1804: "{{ foreman_organization_microsoft_mssql_server_2019 }}"
+# foreman_organization_microsoft_mssql_server_2019_ubuntu2004: "{{ foreman_organization_microsoft_mssql_server_2019 }}"
+
+# foreman_organization_microsoft_mssql_server_2022: "{{ foreman_organization_microsoft }}"
+# foreman_organization_microsoft_mssql_server_2022_el8: "{{ foreman_organization_microsoft_mssql_server_2022 }}"
+# foreman_organization_microsoft_mssql_server_2022_el9: "{{ foreman_organization_microsoft_mssql_server_2022 }}"
+# foreman_organization_microsoft_mssql_server_2022_ubuntu2004: "{{ foreman_organization_microsoft_mssql_server_2022 }}"
+# foreman_organization_microsoft_mssql_server_2022_ubuntu2204: "{{ foreman_organization_microsoft_mssql_server_2022 }}"
+
+
+### NGINX
+
+# foreman_organization_nginx: "{{ foreman_organization }}"
+
+# foreman_organization_nginx_el7: "{{ foreman_organization_nginx }}"
+# foreman_organization_nginx_el8: "{{ foreman_organization_nginx }}"
+# foreman_organization_nginx_el9: "{{ foreman_organization_nginx }}"
+
+
+### ORACLE LINUX
+
+# foreman_organization_ol: "{{ foreman_organization }}"
+
+### ORACLE LINUX 5/6
+
+# foreman_organization_ol5: "{{ foreman_organization_ol }}"
+# foreman_organization_ol6: "{{ foreman_organization_ol }}"
+
+### ORACLE LINUX 7
+
+# foreman_organization_ol7: "{{ foreman_organization_ol }}"
+
+# foreman_organization_ol70: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol71: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol72: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol73: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol74: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol75: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol76: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol77: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol78: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol79: "{{ foreman_organization_ol7 }}"
+
+# foreman_organization_ol7_uek: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr3: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr3_ofed: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr4: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr4_ofed: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr5: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr5_rdma: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr5_developer: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr6: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr6_rdma: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_uekr6_developer: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_modrhck: "{{ foreman_organization_ol7 }}"
+
+# foreman_organization_ol7_leapp: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_instantclient: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_olcne: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_security_validation: "{{ foreman_organization_ol7 }}"
+
+# foreman_organization_ol7_mysql: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_mysql55: "{{ foreman_organization_ol7_mysql }}"
+# foreman_organization_ol7_mysql56: "{{ foreman_organization_ol7_mysql }}"
+# foreman_organization_ol7_mysql57: "{{ foreman_organization_ol7_mysql }}"
+# foreman_organization_ol7_mysql80: "{{ foreman_organization_ol7_mysql }}"
+
+# foreman_organization_ol7_cloud: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_cloud_openstack20: "{{ foreman_organization_ol7_cloud }}"
+# foreman_organization_ol7_cloud_openstack21: "{{ foreman_organization_ol7_cloud }}"
+# foreman_organization_ol7_cloud_openstack30: "{{ foreman_organization_ol7_cloud }}"
+# foreman_organization_ol7_cloud_openstack40: "{{ foreman_organization_ol7_cloud }}"
+# foreman_organization_ol7_cloud_openstack50: "{{ foreman_organization_ol7_cloud }}"
+
+# foreman_organization_ol7_virtualization: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_virtualization_kvm_utils: "{{ foreman_organization_ol7_virtualization }}"
+# foreman_organization_ol7_virtualization_ovirt42: "{{ foreman_organization_ol7_virtualization }}"
+# foreman_organization_ol7_virtualization_ovirt43: "{{ foreman_organization_ol7_virtualization }}"
+
+# foreman_organization_ol7_storage: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_storage_ceph10: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_ceph20: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_ceph30: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_gluster312: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_gluster41: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_gluster5: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_gluster6: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_gluster8: "{{ foreman_organization_ol7_storage }}"
+
+# foreman_organization_ol7_developer: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_developer_go110: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go111: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go112: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go113: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go114: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go115: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go116: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go117: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go118: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go119: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_php74: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs4: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs6: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs8: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs10: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs12: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs14: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs16: "{{ foreman_organization_ol7_developer }}"
+
+# foreman_organization_ol7_olm: "{{ foreman_organization_ol7 }}"
+# foreman_organization_ol7_olm_spacewalk26: "{{ foreman_organization_ol7_olm }}"
+# foreman_organization_ol7_olm_spacewalk27: "{{ foreman_organization_ol7_olm }}"
+# foreman_organization_ol7_olm_spacewalk210: "{{ foreman_organization_ol7_olm }}"
+# foreman_organization_ol7_olm_oraclelinuxmanager210: "{{ foreman_organization_ol7_olm }}"
+
+### ORACLE LINUX 8
+
+# foreman_organization_ol8: "{{ foreman_organization_ol }}"
+
+# foreman_organization_ol80: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol81: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol82: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol83: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol84: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol85: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol86: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol87: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol88: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol89: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol810: "{{ foreman_organization_ol8 }}"
+
+# foreman_organization_ol8_uek: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_uekr6: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_uekr6_developer: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_uekr6_rdma: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_uekr7: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_uekr7_developer: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_uekr7_rdma: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_modrhck: "{{ foreman_organization_ol8 }}"
+
+# foreman_organization_ol8_instantclient: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_mysql: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_olm: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_am: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_am10: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_am20: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_olcne: "{{ foreman_organization_ol8 }}"
+
+# foreman_organization_ol8_virtualization: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_virtualization_kvm_utils: "{{ foreman_organization_ol8_virtualization }}"
+# foreman_organization_ol8_virtualization_ovirt44: "{{ foreman_organization_ol8_virtualization }}"
+
+# foreman_organization_ol8_storage: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_security_validation: "{{ foreman_organization_ol8 }}"
+
+### ORACLE LINUX 9
+
+# foreman_organization_ol9: "{{ foreman_organization_ol }}"
+
+# foreman_organization_ol90: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol91: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol92: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol93: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol94: "{{ foreman_organization_ol9 }}"
+
+# foreman_organization_ol9_uek: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_uekr7: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_uekr7_developer: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_rdma: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_modrhck: "{{ foreman_organization_ol9 }}"
+
+# foreman_organization_ol9_instantclient: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_mysql: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_olm: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_am: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_olcne: "{{ foreman_organization_ol9 }}"
+
+# foreman_organization_ol9_virtualization: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_virtualization_kvm_utils: "{{ foreman_organization_ol9_virtualization }}"
+
+# foreman_organization_ol9_storage: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_security_validation: "{{ foreman_organization_ol9 }}"
+
+
+### ORACLE LINUX ULN
+
+# foreman_organization_ol_uln: "{{ foreman_organization }}"
+
+### ORACLE LINUX 5/6 ULN
+
+# foreman_organization_ol5_uln: "{{ foreman_organization_ol_uln }}"
+# foreman_organization_ol6_uln: "{{ foreman_organization_ol_uln }}"
+
+### ORACLE LINUX 7 ULN
+
+# foreman_organization_ol7_uln: "{{ foreman_organization_ol_uln }}"
+
+# foreman_organization_ol70_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol71_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol72_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol73_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol74_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol75_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol76_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol77_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol78_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol79_uln: "{{ foreman_organization_ol7_uln }}"
+
+# foreman_organization_ol70_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol71_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol72_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol73_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol74_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol75_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol76_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol77_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol78_patch_uln: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol79_patch_uln: "{{ foreman_organization_ol7_uln }}"
+
+# foreman_organization_ol7_uln_uek: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr3: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr3_ofed: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr3_dtrace: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr4: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr4_ofed: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr4_dtrace: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr4_archive: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr5: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr5_archive: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr5_rdma: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr5_developer: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr6: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr6_rdma: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_uekr6_developer: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_modrhck: "{{ foreman_organization_ol7_uln }}"
+
+# foreman_organization_ol7_uln_ksplice: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_sap: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_leapp: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_instantclient: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_olcne: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_security_validation: "{{ foreman_organization_ol7_uln }}"
+
+# foreman_organization_ol7_uln_mysql: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_mysql55: "{{ foreman_organization_ol7_uln_mysql }}"
+# foreman_organization_ol7_uln_mysql56: "{{ foreman_organization_ol7_uln_mysql }}"
+# foreman_organization_ol7_uln_mysql57: "{{ foreman_organization_ol7_uln_mysql }}"
+# foreman_organization_ol7_uln_mysql80: "{{ foreman_organization_ol7_uln_mysql }}"
+
+# foreman_organization_ol7_uln_cloud: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_cloud_openstack20: "{{ foreman_organization_ol7_uln_cloud }}"
+# foreman_organization_ol7_uln_cloud_openstack21: "{{ foreman_organization_ol7_uln_cloud }}"
+# foreman_organization_ol7_uln_cloud_openstack30: "{{ foreman_organization_ol7_uln_cloud }}"
+# foreman_organization_ol7_uln_cloud_openstack40: "{{ foreman_organization_ol7_uln_cloud }}"
+# foreman_organization_ol7_uln_cloud_openstack50: "{{ foreman_organization_ol7_uln_cloud }}"
+
+# foreman_organization_ol7_uln_virtualization: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_virtualization_kvm_utils: "{{ foreman_organization_ol7_uln_virtualization }}"
+# foreman_organization_ol7_uln_virtualization_ovirt42: "{{ foreman_organization_ol7_uln_virtualization }}"
+# foreman_organization_ol7_uln_virtualization_ovirt43: "{{ foreman_organization_ol7_uln_virtualization }}"
+
+# foreman_organization_ol7_uln_storage: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_storage_ceph10: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_ceph20: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_ceph30: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_gluster312: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_gluster41: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_gluster5: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_gluster6: "{{ foreman_organization_ol7_uln_storage }}"
+# foreman_organization_ol7_uln_storage_gluster8: "{{ foreman_organization_ol7_uln_storage }}"
+
+# foreman_organization_ol7_uln_developer: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_developer_go110: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go111: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go112: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go113: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go114: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go115: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go116: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go117: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go118: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_go119: "{{ foreman_organization_ol7_uln_developer }}"
+# foreman_organization_ol7_uln_developer_php74: "{{ foreman_organization_ol7_uln_developer }}"
+
+# foreman_organization_ol7_uln_olm: "{{ foreman_organization_ol7_uln }}"
+# foreman_organization_ol7_uln_olm_spacewalk26: "{{ foreman_organization_ol7_uln_olm }}"
+# foreman_organization_ol7_uln_olm_spacewalk27: "{{ foreman_organization_ol7_uln_olm }}"
+# foreman_organization_ol7_uln_olm_spacewalk210: "{{ foreman_organization_ol7_uln_olm }}"
+# foreman_organization_ol7_uln_olm_oraclelinuxmanager210: "{{ foreman_organization_ol7_uln_olm }}"
+
+# foreman_organization_ol7_uln_exadata: "{{ foreman_organization_ol7_uln }}"
+
+### ORACLE LINUX 8 ULN
+
+# foreman_organization_ol8_uln: "{{ foreman_organization_ol_uln }}"
+
+# foreman_organization_ol80_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol81_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol82_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol83_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol84_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol85_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol86_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol87_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol88_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol89_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol810_uln: "{{ foreman_organization_ol8_uln }}"
+
+# foreman_organization_ol80_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol81_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol82_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol83_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol84_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol85_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol86_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol87_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol88_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol89_patch_uln: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol810_patch_uln: "{{ foreman_organization_ol8_uln }}"
+
+# foreman_organization_ol8_uln_uek: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_uekr6: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_uekr6_developer: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_uekr6_rdma: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_uekr7: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_uekr7_developer: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_uekr7_rdma: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_modrhck: "{{ foreman_organization_ol8_uln }}"
+
+# foreman_organization_ol8_uln_ksplice: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_instantclient: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_mysql: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_olm: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_am: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_am10: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_am20: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_olcne: "{{ foreman_organization_ol8_uln }}"
+
+# foreman_organization_ol8_uln_virtualization: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_virtualization_kvm_utils: "{{ foreman_organization_ol8_uln_virtualization }}"
+# foreman_organization_ol8_uln_virtualization_ovirt44: "{{ foreman_organization_ol8_uln_virtualization }}"
+
+# foreman_organization_ol8_uln_storage: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_security_validation: "{{ foreman_organization_ol8_uln }}"
+
+### ORACLE LINUX 9 ULN
+
+# foreman_organization_ol9_uln: "{{ foreman_organization_ol_uln }}"
+
+# foreman_organization_ol90_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol91_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol92_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol93_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol94_uln: "{{ foreman_organization_ol9_uln }}"
+
+# foreman_organization_ol90_patch_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol91_patch_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol92_patch_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol93_patch_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol94_patch_uln: "{{ foreman_organization_ol9_uln }}"
+
+# foreman_organization_ol9_uln_uek: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_uekr7: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_uekr7_developer: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_rdma: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_modrhck: "{{ foreman_organization_ol9_uln }}"
+
+# foreman_organization_ol9_uln_ksplice: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_instantclient: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_mysql: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_olm: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_am: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_olcne: "{{ foreman_organization_ol9_uln }}"
+
+# foreman_organization_ol9_uln_virtualization: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_virtualization_kvm_utils: "{{ foreman_organization_ol9_uln_virtualization }}"
+
+# foreman_organization_ol9_uln_storage: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_security_validation: "{{ foreman_organization_ol9_uln }}"
+
+# foreman_organization_ol9_uln_oci: "{{ foreman_organization_ol9_uln }}"
+
+
+### REDHAT
+
+# foreman_organization_redhat: "{{ foreman_organization }}"
+
+### REDHAT 7
+
+# foreman_organization_redhat7: "{{ foreman_organization_redhat }}"
+
+# foreman_organization_redhat70: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat71: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat72: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat73: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat74: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat75: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat76: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat77: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat78: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat79: "{{ foreman_organization_redhat7 }}"
+
+# foreman_organization_redhat70_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat71_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat72_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat73_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat74_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat75_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat76_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat77_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat78_kickstart: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat79_kickstart: "{{ foreman_organization_redhat7 }}"
+
+# foreman_organization_redhat7_sat: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat7_aap: "{{ foreman_organization_redhat7 }}"
+# foreman_organization_redhat7_rhocp: "{{ foreman_organization_redhat7 }}"
+
+### REDHAT 8
+
+# foreman_organization_redhat8: "{{ foreman_organization_redhat }}"
+
+# foreman_organization_redhat80: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat81: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat82: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat83: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat84: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat85: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat86: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat87: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat88: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat89: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat810: "{{ foreman_organization_redhat8 }}"
+
+# foreman_organization_redhat80_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat81_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat82_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat83_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat84_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat85_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat86_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat87_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat88_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat89_kickstart: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat810_kickstart: "{{ foreman_organization_redhat8 }}"
+
+# foreman_organization_redhat8_sat: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat8_aap: "{{ foreman_organization_redhat8 }}"
+# foreman_organization_redhat8_rhocp: "{{ foreman_organization_redhat8 }}"
+
+### REDHAT 9
+
+# foreman_organization_redhat9: "{{ foreman_organization_redhat }}"
+
+# foreman_organization_redhat90: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat91: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat92: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat93: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat94: "{{ foreman_organization_redhat9 }}"
+
+# foreman_organization_redhat90_kickstart: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat91_kickstart: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat92_kickstart: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat93_kickstart: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat94_kickstart: "{{ foreman_organization_redhat9 }}"
+
+# foreman_organization_redhat9_aap: "{{ foreman_organization_redhat9 }}"
+# foreman_organization_redhat9_rhocp: "{{ foreman_organization_redhat9 }}"
+
+
+### REMI
+
+# foreman_organization_remi: "{{ foreman_organization }}"
+
+# foreman_organization_remi_el7: "{{ foreman_organization_remi }}"
+# foreman_organization_remi_el8: "{{ foreman_organization_remi }}"
+# foreman_organization_remi_el9: "{{ foreman_organization_remi }}"
+
+
+### ROCKY
+
+# foreman_organization_rocky: "{{ foreman_organization }}"
+
+### ROCKY 8
+
+# foreman_organization_rocky8: "{{ foreman_organization_rocky }}"
+
+# foreman_organization_rocky84: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky85: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky86: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky87: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky88: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky89: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky810: "{{ foreman_organization_rocky8 }}"
+
+# foreman_organization_rocky8_sig_core: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky8_sig_core_common: "{{ foreman_organization_rocky8_sig_core }}"
+# foreman_organization_rocky8_sig_core_infra: "{{ foreman_organization_rocky8_sig_core }}"
+
+# foreman_organization_rocky8_sig_cloud: "{{ foreman_organization_rocky8 }}"
+# foreman_organization_rocky8_sig_cloud_common: "{{ foreman_organization_rocky8_sig_cloud }}"
+# foreman_organization_rocky8_sig_cloud_kernel: "{{ foreman_organization_rocky8_sig_cloud }}"
+
+### ROCKY 9
+
+# foreman_organization_rocky9: "{{ foreman_organization_rocky }}"
+
+# foreman_organization_rocky90: "{{ foreman_organization_rocky9 }}"
+# foreman_organization_rocky91: "{{ foreman_organization_rocky9 }}"
+# foreman_organization_rocky92: "{{ foreman_organization_rocky9 }}"
+# foreman_organization_rocky93: "{{ foreman_organization_rocky9 }}"
+# foreman_organization_rocky94: "{{ foreman_organization_rocky9 }}"
+
+# foreman_organization_rocky9_sig_core: "{{ foreman_organization_rocky9 }}"
+# foreman_organization_rocky9_sig_core_common: "{{ foreman_organization_rocky9_sig_core }}"
+# foreman_organization_rocky9_sig_core_infra: "{{ foreman_organization_rocky9_sig_core }}"
+
+# foreman_organization_rocky9_sig_cloud: "{{ foreman_organization_rocky9 }}"
+# foreman_organization_rocky9_sig_cloud_common: "{{ foreman_organization_rocky9_sig_cloud }}"
+# foreman_organization_rocky9_sig_cloud_kernel: "{{ foreman_organization_rocky9_sig_cloud }}"
+
+
+### UBUNTU
+
+# foreman_organization_ubuntu: "{{ foreman_organization }}"
+
+# foreman_organization_ubuntu1804: "{{ foreman_organization_ubuntu }}"
+# foreman_organization_ubuntu2004: "{{ foreman_organization_ubuntu }}"
+# foreman_organization_ubuntu2204: "{{ foreman_organization_ubuntu }}"
+# foreman_organization_ubuntu2404: "{{ foreman_organization_ubuntu }}"
+
+

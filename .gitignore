@@ -1,0 +1,142 @@
+# Backup files
+*[.-_]b[ac]k
+*[.-_]b[ac]k[.-_]*
+*[.-_]orig
+*[.-_]orig[.-_]*
+
+# Build products...
+*.py[co]
+build
+AUTHORS.TXT
+
+# Original files
+src
+
+# Emacs backup files...
+*~
+.\#*
+
+# Eclipse/PyDev stuff...
+.project
+.pydevproject
+
+# PyCharm stuff...
+.idea
+
+#IntelliJ IDEA stuff..
+*.iml
+
+# Mac OS X stuff...
+.DS_Store
+
+# Sublime stuff
+*.sublime-project
+*.sublime-workspace
+
+# Vim swap files
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Credentials files
+credentials.yml
+*creds.*
+
+# Temporary files
+*.tmp
+
+# NFS snapshot data
+.snapshot
+
+# Test output
+.coverage
+.tox
+results.xml
+coverage.xml
+/test/units/cover-html
+
+# Development
+/test/develop
+venv
+.vagrant
+ansible.egg-info/
+
+# Ansible retry file
+*.retry
+
+# Molecule files
+**/.molecule/
+**/.pytest_cache/
+
+# Unity files
+*.meta
+*.unity
+*.asset
+*.prefab
+
+# Image formats
+*.psd
+*.jpg
+*.png
+*.gif
+*.bmp
+*.tga
+*.tiff
+*.iff
+*.pict
+*.dds
+*.xcf
+
+# Audio formats
+*.mp3
+*.ogg
+*.wav
+*.aiff
+*.aif
+*.mod
+*.it
+*.s3m
+*.xm
+
+# Video formats
+*.mov
+*.avi
+*.asf
+*.mpg
+*.mpeg
+*.mp4
+
+# 3D formats
+*.fbx
+*.obj
+*.max
+*.blend
+*.dae
+*.mb
+*.ma
+*.3ds
+*.dfx
+*.c4d
+*.lwo
+*.lwo2
+*.abc
+*.3dm
+
+# Build
+*.dll
+*.pdb
+*.mdb
+
+# Executables
+*.exe
+*.msi
+
+# Archives
+*.zip
+*.7z
+*.gz
+*.rar
+*.tar
+

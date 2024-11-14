@@ -1,0 +1,296 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_content_credentials_docker_ee_main:
+  - name: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-docker-ee"
+    content_type: gpg_key
+    content: "{{ lookup('ansible.builtin.url', foreman_repo_baseurl_docker_ee ~ '/rhel/gpg', split_lines=False, validate_eerts=False) }}"
+    # content: "{{ lookup('ansible.builtin.file', role_path ~ '/files/RPM-GPG-KEY-docker-ee') }}"
+
+foreman_content_credentials_docker_ee: "{{ ( foreman_content_credentials_docker_ee_main | default([]) if foreman_enable_docker_ee | bool else [] ) |
+  union( foreman_content_credentials_docker_ee_el7 | default([]) if foreman_enable_docker_ee_el7 | bool else [] ) |
+  union( foreman_content_credentials_docker_ee_el8 | default([]) if foreman_enable_docker_ee_el8 | bool else [] ) |
+  union( foreman_content_credentials_docker_ee_el9 | default([]) if foreman_enable_docker_ee_el9 | bool else [] )
+  }}"
+
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-docker-ee"
+  download_policy: "{{ foreman_products_defaults_download_policy_docker }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_docker }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_docker | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_docker }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_docker | bool }}"
+
+foreman_products_defaults_docker_ee: &foreman_products_defaults_docker_ee
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_docker_ee }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_docker_ee }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_docker_ee | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_docker_ee }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_docker_ee | bool }}"
+
+
+foreman_products_docker_ee_el7:
+  - name: "{{ foreman_product_name_prefix | default('') }}Docker"
+    label: "{{ foreman_product_label_prefix | default('') }}Docker"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 17.03 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-17_03-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-17.03/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 17.06 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-17_06-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-17.06/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 18.03 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-18_03-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-18.03/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 18.09 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-18_09-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-18.09/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 19.03 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-19_03-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-19.03/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 20.10 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-20_10-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-20.10/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 23.0 - x86_64 - RHEL7"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-23_0-rhel7"
+        <<: *foreman_products_defaults_docker_ee
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/7/x86_64/stable-23.0/"
+        organization: "{{ foreman_organization_docker_ee_el7 }}"
+
+foreman_products_docker_ee_el8:
+  - name: "{{ foreman_product_name_prefix | default('') }}Docker"
+    label: "{{ foreman_product_label_prefix | default('') }}Docker"
+    organization: "{{ foreman_organization_docker_ee_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable - x86_64 - RHEL8"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-rhel8"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/8/x86_64/stable/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el8 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 18.09 - x86_64 - RHEL8"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-18_09-rhel8"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/8/x86_64/stable-18.09/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el8 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 19.03 - x86_64 - RHEL8"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-19_03-rhel8"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/8/x86_64/stable-19.03/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el8 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 20.10 - x86_64 - RHEL8"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-20_10-rhel8"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/8/x86_64/stable-20.10/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el8 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 23.0 - x86_64 - RHEL8"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-23_0-rhel8"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/8/x86_64/stable-23.0/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el8 }}"
+
+foreman_products_docker_ee_el9:
+  - name: "{{ foreman_product_name_prefix | default('') }}Docker"
+    label: "{{ foreman_product_label_prefix | default('') }}Docker"
+    organization: "{{ foreman_organization_docker_ee_el9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable - x86_64 - RHEL9"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-rhel9"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/9/x86_64/stable/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el9 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 20.10 - x86_64 - RHEL9"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-20_10-rhel9"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/9/x86_64/stable-20.10/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el9 }}"
+
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 23.0 - x86_64 - RHEL9"
+        label: "{{ foreman_repo_label_prefix | default('') }}docker-ee-stable-23_0-rhel9"
+        url: "{{ foreman_repo_baseurl_docker_ee }}/rhel/9/x86_64/stable-23.0/"
+        <<: *foreman_products_defaults_docker_ee
+        organization: "{{ foreman_organization_docker_ee_el9 }}"
+
+foreman_products_docker_ee_main: []
+foreman_products_docker_ee: "{{ ( foreman_products_docker_ee_main | default([]) if foreman_enable_docker_ee | bool else [] ) |
+  union( foreman_products_docker_ee_el7 | default([]) if foreman_enable_docker_ee_el7 | bool else [] ) |
+  union( foreman_products_docker_ee_el8 | default([]) if foreman_enable_docker_ee_el8 | bool else [] ) |
+  union( foreman_products_docker_ee_el9 | default([]) if foreman_enable_docker_ee_el9 | bool else [] )
+  }}"
+
+
+foreman_content_views_docker_ee_el7:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_17_03_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 17.03 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_17_06_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 17.06 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_18_03_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 18.03 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_18_09_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 18.09 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_19_03_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 19.03 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_20_10_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 20.10 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_23_0_rhel7"
+    organization: "{{ foreman_organization_docker_ee_el7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 23.0 - x86_64 - RHEL7"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el7 }}"
+
+foreman_content_views_docker_ee_el8:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_rhel8"
+    organization: "{{ foreman_organization_docker_ee_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable - x86_64 - RHEL8"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el8 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_18_09_rhel8"
+    organization: "{{ foreman_organization_docker_ee_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 18.09 - x86_64 - RHEL8"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el8 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_19_03_rhel8"
+    organization: "{{ foreman_organization_docker_ee_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 19.03 - x86_64 - RHEL8"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el8 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_20_10_rhel8"
+    organization: "{{ foreman_organization_docker_ee_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 20.10 - x86_64 - RHEL8"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el8 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_23_0_rhel8"
+    organization: "{{ foreman_organization_docker_ee_el8 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 23.0 - x86_64 - RHEL8"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el8 }}"
+
+foreman_content_views_docker_ee_el9:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_rhel9"
+    organization: "{{ foreman_organization_docker_ee_el9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable - x86_64 - RHEL9"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el9 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_20_10_rhel9"
+    organization: "{{ foreman_organization_docker_ee_el9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 20.10 - x86_64 - RHEL9"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el9 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}docker_ee_stable_23_0_rhel9"
+    organization: "{{ foreman_organization_docker_ee_el9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Docker EE Stable 23.0 - x86_64 - RHEL9"
+        product: "{{ foreman_product_name_prefix | default('') }}Docker"
+    allow_promote: "{{ foreman_cv_allow_promote_docker_ee_el9 }}"
+
+foreman_content_views_docker_ee_main: []
+foreman_content_views_docker_ee: "{{ ( foreman_content_views_docker_ee_main | default([]) if foreman_enable_docker_ee | bool else [] ) |
+  union( foreman_content_views_docker_ee_el7 | default([]) if foreman_enable_docker_ee_el7 | bool else [] ) |
+  union( foreman_content_views_docker_ee_el8 | default([]) if foreman_enable_docker_ee_el8 | bool else [] ) |
+  union( foreman_content_views_docker_ee_el9 | default([]) if foreman_enable_docker_ee_el9 | bool else [] )
+  }}"
+
+
+foreman_activation_keys_docker_ee_main: []
+foreman_activation_keys_docker_ee: "{{ ( foreman_activation_keys_docker_ee_main | default([]) if foreman_enable_docker_ee | bool else [] ) |
+  union( foreman_activation_keys_docker_ee_el7 | default([]) if foreman_enable_docker_ee_el7 | bool else [] ) |
+  union( foreman_activation_keys_docker_ee_el8 | default([]) if foreman_enable_docker_ee_el8 | bool else [] ) |
+  union( foreman_activation_keys_docker_ee_el9 | default([]) if foreman_enable_docker_ee_el9 | bool else [] )
+  }}"
+
+
+foreman_sync_plan_products_docker_ee_main: []
+foreman_sync_plan_products_docker_ee: "{{ ( foreman_sync_plan_products_docker_ee_main | default([]) if foreman_enable_docker_ee | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ee_el7 | default([]) if foreman_enable_docker_ee_el7 | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ee_el8 | default([]) if foreman_enable_docker_ee_el8 | bool else [] ) |
+  union( foreman_sync_plan_products_docker_ee_el9 | default([]) if foreman_enable_docker_ee_el9 | bool else [] )
+  }}"
+
