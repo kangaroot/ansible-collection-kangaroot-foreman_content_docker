@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  role_name: foreman_content_docker
+  author: "Sven Meeus <sven.meeus@kangaroot.net>"
+  description: "Role for configuring Docker repositories in a Foreman/Katello installation"
+  license: GPL-3.0-or-later
+  min_ansible_version: "2.13"
+  platforms:
+    - name: Enterprise Linux
+      versions:
+        - "7"
+        - "8"
+        - "9"
+  galaxy_tags:
+    - foreman
+    - katello
+    - satellite
+    - docker
+dependencies: []
